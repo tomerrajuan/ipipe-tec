@@ -9,8 +9,8 @@
 
 #language-menu{
     position: absolute;
-    margin-top: 80px;
-    left: 15px;
+    margin-top: 9vh;
+    left: 20px;
     z-index: 1;
     outline: none;
     opacity: 0.6;
@@ -187,7 +187,8 @@ h3 {
   justify-content: flex-end;
   -ms-flex-item-align: center;
   align-self: center;
-  margin-right: 3px;
+  margin-left: 10px;
+
 }
 
 .navbar a, .navbar h1 {
@@ -241,6 +242,7 @@ h3 {
   margin-top: 41vh;
   letter-spacing: 1px;
   overflow: hidden;
+  visibility: hidden;
 }
 
 .hidden {
@@ -349,7 +351,7 @@ background: linear-gradient(to left,  rgb(112,101,204), rgb(230,106,213)); */
   font-weight: 400;
   color: white;
   margin-bottom: 3vh;
-  font-size: 78px;
+  font-size: 56px;
   text-align: center;
 }
 
@@ -361,7 +363,7 @@ background: linear-gradient(to left,  rgb(112,101,204), rgb(230,106,213)); */
     text-align: right;
     letter-spacing: 1px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 30px;
 }
 
 /* about END */
@@ -481,7 +483,7 @@ background: linear-gradient(to left,  rgb(112,101,204), rgb(230,106,213)); */
   margin-bottom: 8vh;
 }
 
-.workers_row_1 {
+.workers_row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,18 +492,6 @@ background: linear-gradient(to left,  rgb(112,101,204), rgb(230,106,213)); */
   -ms-flex-direction: row;
   flex-direction: row;
   margin-right: 7vw;
-}
-
-.workers_row_2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-right: 7vw;
-  margin-bottom: 4vh;
 }
 
 .worker {
@@ -522,12 +512,6 @@ background: linear-gradient(to left,  rgb(112,101,204), rgb(230,106,213)); */
   border: 1px solid;
 }
 
-/* .worker:hover {
-    border-top: 1px solid;
-    border-left: 1px solid;
-    -webkit-box-shadow: 1px 1px 1px 1.5px;
-    box-shadow: 1px 1px 1px 1.5px;
-} */
 .worker:hover {
   -webkit-box-shadow: 0 4px 8px;
           box-shadow: 0 4px 8px;
@@ -718,7 +702,6 @@ background: linear-gradient(to left,  rgb(112,101,204), rgb(230,106,213)); */
   font-weight: 400;
   margin-bottom: 31px;
   line-height: 42px;
-  text-transform: uppercase;
 }
 
 .form {
@@ -843,47 +826,35 @@ button:active {
 
 /* end contact section */
 /* footer */
-footer section {
-  width: 100%;
-  display: inline-block;
-  background: #333;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
+
 
 .footer-distributed {
+    display: flex;
+    flex-wrap: wrap;
   margin-top: 10vh;
   background: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   width: 100%;
-  text-align: right;
   font: bold 16px "Nunito";
-  padding: 20px 50px;
-  padding-right: 15vw !important;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right {
-  display: inline-block;
+  padding: 4vh 5vw;
 }
 
 /* Footer left */
 .footer-distributed .footer-right {
-  width: 30%;
+  width: 30vw;
 }
-
+.footer-distributed .footer-center {
+    width: 27vw;
+  }
+  .footer-distributed .footer-left {
+    width: 30vw;
+    text-align: center;
+    margin-top: 1vh;
+  }
 /* The company logo */
 #logo_footer {
   height: 50px;
   width: 70px;
-  margin-top: 12%;
 }
 
 .footer-distributed h3 {
@@ -891,9 +862,6 @@ footer section {
   margin: 0;
 }
 
-.footer-distributed h3 span {
-  color: lightseagreen;
-}
 
 /* Footer links */
 .footer-distributed .footer-links {
@@ -918,9 +886,7 @@ footer section {
 }
 
 /* Footer Center */
-.footer-distributed .footer-center {
-  width: 30%;
-}
+
 
 .footer-distributed .footer-center i {
   background-color: #33383b;
@@ -946,6 +912,7 @@ footer section {
   font-weight: 400;
   vertical-align: middle;
   margin: 0;
+  font-size: 15px;
 }
 
 .footer-distributed .footer-center p span {
@@ -974,19 +941,12 @@ footer section {
   content: none;
 }
 
-/* Footer Right */
-.footer-distributed .footer-left {
-  width: 30%;
-  text-align: center;
-  margin-top: -1vh;
-}
 
 .footer-distributed .footer-company-about {
   line-height: 20px;
   color: white;
   font-size: 16px;
   font-weight: normal;
-  margin: 7% 0px;
 }
 
 .footer-distributed .footer-company-about p {
@@ -1067,47 +1027,26 @@ footer section {
 
 
 /* ////////////////////////////// */
-
+@media screen and (min-width: 200px) and (max-width: 860px) {
+.footer-distributed{
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.footer-center div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-distributed .footer-right .footer-center .footer-left{
+    margin-bottom: 5vh !important;
+}
+}
 
 @media screen and (min-width: 200px) and (max-width: 900px) {
  
   header {
     height: 47px;
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    position: fixed;
-    background: rgba(31, 31, 31, 0.95);
-  }
-  .navbar {
-    height: 6vh;
-    width: 90vw;
-    margin-right: 10vw;
-    overflow: hidden;
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-  .navbar a {
-    font-size: 12px;
-    float: right;
-    color: grey;
-    text-align: center;
-    padding: 0 7px;
-    text-decoration: none;
-    float: right;
-    color: white;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
   }
   #hamburger {
     visibility: visible;
@@ -1132,46 +1071,23 @@ footer section {
   #logo_header {
     height: 30px;
     width: 45px;
-    margin-top: 1vh;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+
   }
   #pipe_img {
-    -o-object-fit: contain;
-    object-fit: contain;
-    width: 100vw !important;
+
     height: 380px;
   }
   .welcome_message {
-    position: absolute;
-    z-index: 2;
-    width: 100vw;
-    text-align: center;
-    height: auto;
     margin-top: 170px;
-    letter-spacing: 1px;
-    overflow: hidden;
   }
   .welcome_message h2 {
     font-size: 19px;
-    width: 60vw;
-    margin-right: 20vw;
-    color: white;
-    font-weight: 700;
-    text-align: center;
   }
   .welcome_message h1 {
     font-size: 45px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: white;
   }
   #pipe_img {
-    width: 100vw;
     margin-top: 4%;
-    -o-object-fit: cover;
-    object-fit: cover;
   }
   #challenge {
     margin-bottom: 0;
@@ -1184,20 +1100,13 @@ footer section {
     width: 70vw;
     font-size: 13px;
     margin-bottom: 3%;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
     line-height: 20px;
   }
   #submarine_small {
     height: 30vh;
-    width: auto;
-    -o-object-fit: contain;
-    object-fit: contain;
     padding-top: 3vh;
   }
   #solution {
-    color: #3eb9ec;
     padding-top: 3vh;
     margin-bottom: 0vh;
   }
@@ -1258,53 +1167,17 @@ footer section {
     height: auto;
   }
   #about {
-    /* border-top: double;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; */
     height: 1px !important;
-    /* -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        width: 100vw;
-        margin-bottom: 1vh;
-        background-color: white; */
+
     visibility: hidden;
   }
-  #about_head {
-    color: #3eb9ec;
-    padding-top: 2vh;
-    width: 80vw;
-    text-align: center;
-    margin-bottom: 3vh;
-    font-size: 26px;
-  }
-  #about_message {
-    color: darkslategrey;
-    text-align: right;
-    font-size: 15px;
-    width: 80vw;
-    line-height: 19px;
-    padding-bottom: 6vh;
-    padding-right: 10vw;
-  }
+
   #our_team_header {
-    font-size: 24px;
+    font-size: 34px;
     margin-bottom: 6vh;
   }
-  .workers_row_1 {
-  margin-right: 0 !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    align-items: center;
-  }
-  .workers_row_2 {
+
+  .workers_row{
     margin-right: 0 !important;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1393,76 +1266,8 @@ footer section {
   textarea {
     width: 90%;
   }
-  .footer-distributed {
-    background: rgba(0, 0, 0, 0.8);
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    text-align: center;
-    font: bold 16px "Nunito";
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: auto;
-    padding-left: 36vw;
-    margin-top: 2%;
-  }
-  .footer-distributed .footer-icons {
-    margin-top: -28vh;
-  }
-  .footer-distributed .footer-company-about {
-    visibility: hidden;
-  }
-  .footer-distributed .footer-left {
-    align-self: center;
-    text-align: center;
-    margin-top: -1vh;
-    margin-top: 24vh;
-    width: 26vw;
-  }
-  .footer-distributed .footer-center .footer-right {
-    align-self: center;
-   
-  }
-  .footer-distributed .footer-center i {
-    background-color: #33383b;
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin-left: 9vw;
-    vertical-align: middle;
-  }
-  .footer-center p {
-    display: inline-block;
-    color: #ffffff;
-    font-weight: 400;
-    vertical-align: middle;
-    margin: 0;
-    width: 27vw;
-  }
-  .footer-distributed .footer-company-name {
-    color: white;
-    font-size: 14px;
-    font-weight: normal;
-    width: 28vw;
-  }
-  .footer-distributed .footer-links {
-    color: #ffffff;
-    width: 28vw;
-  }
-  #logo_footer {
-    height: 30px;
-    width: 45px;
-  }
-}
 
+ 
 @media screen and (min-width: 515px) and (max-width: 670px) {
     .modal-container-news.on{
         visibility: hidden !important;
@@ -1498,6 +1303,13 @@ footer section {
     padding: 0.5px 3px;
     font-size: 10px;
   }
+}
+
+.footer-distributed{
+    padding: 4vh 3vw !important;
+}
+.footer-center{
+width: 40vw;
 }
 
 @media screen and (min-width: 380px) and (max-width: 515px) {
