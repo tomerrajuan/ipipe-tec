@@ -3,7 +3,7 @@
 
 <head>
     <title>Ipipe</title>
-    <link rel="stylesheet" href="style-he.css" />
+    <link rel="stylesheet" href="./scss-he/style-he.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
     <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg" />
@@ -28,29 +28,25 @@
 
 <body dir="rtl">
     <header>
-        <a href="#" class="link-1"><img id="logo_header" src="logo.jpg" alt="" /></a>
-        <nav class="navbar">
+        <img class="logo-header" src="./public/logo.jpg" alt="" />
+        <navbar class="navbar">
             <a href="#challenge">האתגר</a>
             <a href="#about">על החברה</a>
             <a href="#solution">הפתרון</a>
             <a href="#team">המומחים שלנו</a>
             <a href="#contact">צור קשר</a>
-
-            <!-- <h1 class="modal">News</h1> -->
-        </nav>
+        </navbar>
         <!-- header for smaller screens -->
-        <i class="fa fa-bars" id="hamburger"></i>
-        <div id="hamburger-menu">
-            <div id="menu">
+        <div class="header-tablet">
+            <div id="header-tablet-menu">
                 <ul>
                     <li><a href="#challenge">האתגר</a></li>
                     <li><a href="#technology">הטכנולוגיה</a></li>
                     <li><a href="#solution">הפתרון</a></li>
                     <li><a href="#team">המומחים שלנו</a></li>
                     <li><a href="#contact">צור קשר</a></li>
-                    <!-- <li><h1 class="modal">News</h1></li> -->
                 </ul>
-                <div id="close-ham-menu">X</div>
+                <ion-icon class="close-ham-menu" name="exit-outline"></ion-icon>
             </div>
         </div>
     </header>
@@ -65,108 +61,118 @@
             <option value="index-he.html">עברית</option>
             <option value="index.html">English</option>
         </select>
-        <img id="pipe_img" src="pipe1.jpg" alt="" />
+        <img id="pipe_img" src="./public/pipe1.jpg" alt="" />
 
-        <section id="challenge">
-            <h1 id="challenge_head">האתגר</h1>
-            <p id="challenge_message">
+        <section class="challenge">
+            <h1 class="challenge__head">האתגר</h1>
+            <p class="challenge__message">
                 <strong>
                     מערכת הולכת המים, שבדרך כלל טמונה מתחת לפני הקרקע, 
-                    היא התשתית ההנדסית הגדולה ביותר בעולם</strong>
-          (מאות מיליוני קילומטרים)<strong>
+                    היא התשתית ההנדסית הגדולה ביותר בעולם</strong> (מאות מיליוני קילומטרים)<strong>
             שאיננה נתונה לניטור תקופתי וכתוצאה מכך החברות המפעילות אותה אינן מודעות לכמות הנזילות, מיקומם, מצב הצנרת, חסימות, חיבורים פיראטיים, הימצאות גופים זרים בצנרת וכשלים נוספים. 
 </strong
           ><br><br>
         </p>
-        <img id="submarine_small" src="submarine_small.jpg" alt="" />
+        <img class="challenge__image" src="./public/submarine_small.jpg" alt="" />
           </section>
 
-         <section id="about">
-        <h1 id="about_head">קצת עלינו</h1>
-        <p id="about_message">
-             אנו <strong>(iPIPE Ltd)</strong> החברת סטארט-אפ המנהלת מערכת מהפכנית המספקת בדיקה ישירה ויכולים ניהול מערכות של רשתות צנרת מי שתייה בלחץ בזמן שהצנרת פעילה
-             <br><br>
-אנו מספקים פתרונות אפקטיביים לזיהוי ואיתור נזילות, ריתוכים לקויים, קורוזיה, חסימות, חיבורים לא מורשים וקטעי רשת ללא מיפוי. 
-<br><br>
 
-במימון <strong>משרד האנרגיה</strong> השגנו קשר אסטרטגי עם חברות מים מרכזיות בישראל
-<strong>"הגיחון"</strong>, <strong>מניב ראשון</strong> ו <strong>מאי הרצליה</strong>.
-            </p>
-           </section>
 
         <section id="solution">
             <h1 id="solution_head">הפתרון</h1>
-            <p id="solution_message">
+            <p class="solution__message">
                 אנו בחברת אייפייפ פיתחנו מערכת מהפכנית שבמרכזה פלטפורמה (צוללת זעירה) אוטונומית, נושאת חיישנים המאפשרת בדיקה ישירה של צנרת המים מבפנים בזמן שהצנרת פעילה ומבלי להפריע את אספקת המים לצרכנים.
                 הפתרון שלנו מאפשר ניטור של צנרת מים מקוטר של "4 ועד לקוטר של "80 ויותר ובטווחים של עד 10 ק''מ.
                 <br><br>
-               המערכת מספקת מידע מהימן אודות מצב הצנרת, שלמות המערכת ומיקום הבעיות שהתגלו. כמו כן המערכת מסוגלת לשרטט את תוואי הצינור על גבי מפה תלת מימדית (GIS ).
+               המערכת מספקת מידע מהימן אודות מצב הצנרת, שלמות המערכת ומיקום הבעיות שהתגלו. כמו כן המערכת מסוגלת לשרטט את תוואי הצינור על גבי מפה תלת מימדית (GIS).
             </p>
-            <iframe id="myVideo" src="https://www.youtube.com/embed/ShJvjNNYe0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3>
+            <iframe class="solution__video" src="https://www.youtube.com/embed/ShJvjNNYe0k" allowFullScreen="allowFullScreen"
+            mozallowfullscreen="mozallowfullscreen" 
+            msallowfullscreen="msallowfullscreen" 
+            oallowfullscreen="oallowfullscreen" 
+            webkitallowfullscreen="webkitallowfullscreen"></iframe>           
+             <h3>
                 בוידאו: MODA_01 שטה בתוך צנרת במעבדת הבדיקות שלנו
             </h3>
         </section>
 
-        <section id="technology">
-            <div class="technology_info">
-                <h1 id="technology_head">הטכנולוגיה</h1>
-                <p id="technology_message">
+        <section class="technology">
+            <div class="technology__info">
+                <h1 class="technology__head">הטכנולוגיה</h1>
+                <p class="technology__message">
                     <strong>MODA_01 </strong> היא פלטפורמה נושאת חיישנים המסוגלת לנוע באופן אוטנומי למרחקים ארוכים (עד 10 ק''מ) ולבצע את המשימות הבאות:
-                    <br><br>
-                    1. איסוף אינפורמציה ויזואלית מתוך הצנרת (וידאו) המצביעה על כשלים שונים<br />
-                    2.
-                    איסוף מידע שמע מתוך הצנרת המאפשר זיהוי של דלף. <br />3.
-                    איסוף מידע המאפשר שיחזור תוואי הצינור ומיקום הכשלים שנמצאו בו על גבי מפה דיגיטלית תלת מימדית (GIS).
-                <br><br>
-                היכולות הללו מאפשרות לאתר כשלים שונים בצנרת, לבחון האם מדובר בדלף ולהעריך את חומרתו, לשרטט את תוואי הצינור על מפה דיגיטלית ולקבוע את מיקומם המדוייק של הכשלים.
+                <br><br> 1. איסוף אינפורמציה ויזואלית מתוך הצנרת (וידאו) המצביעה על כשלים שונים<br /> 2. איסוף מידע שמע מתוך הצנרת המאפשר זיהוי של דלף. <br />3. איסוף מידע המאפשר שיחזור תוואי הצינור ומיקום הכשלים שנמצאו בו על גבי מפה דיגיטלית תלת מימדית
+                (GIS).
+                <br><br> היכולות הללו מאפשרות לאתר כשלים שונים בצנרת, לבחון האם מדובר בדלף ולהעריך את חומרתו, לשרטט את תוואי הצינור על מפה דיגיטלית ולקבוע את מיקומם המדוייק של הכשלים.
             </p>
-           
+
             </div>
 
-            <img id="data" src="data.jpg" alt="" />
+            <img id="data" src="./public/data.jpg" alt="" />
         </section>
 
         <section id="team">
             <h1 id="our_team_header">המומחים שלנו</h1>
             <div class="workers_row">
                 <div class="worker">
-                    <img id="worker_img" src="menash.jpg" alt="" />
+                    <img id="worker_img" src="./public/menash.jpg" alt="" />
                     <p id="worker_message">
-                        <strong>ד''ר מנשה רג'ואן (מנכ''ל ומייסד החברה)</strong>- יזם עם ניסיון של למעלה משלושים שנים בפיתוח מערכות רב תחומיות ובתפקידי ניהול בכירים במיגוון חברות תעשייתיות. תואר ראשון במתמטיקה-פיסיקה ובהנדסת תוכנה, תואר שני בכימיה פיסיקלית ובאנרגיה ותואר שלישי בכימיה חישובית. 
+                        <strong>ד''ר מנשה רג'ואן (מנכ''ל ומייסד החברה)</strong>- יזם עם ניסיון של למעלה משלושים שנים בפיתוח מערכות רב תחומיות ובתפקידי ניהול בכירים במיגוון חברות תעשייתיות. תואר ראשון במתמטיקה-פיסיקה ובהנדסת תוכנה, תואר שני בכימיה פיסיקלית
+                        ובאנרגיה ותואר שלישי בכימיה חישובית.
                     </p>
-                <a href="https://www.linkedin.com/in/menasherajuan/"  target="_blank"><i class="fa fa-linkedin"></i
+                    <a href="https://www.linkedin.com/in/menasherajuan/" target="_blank"><i class="fa fa-linkedin"></i
                     ></a>
                 </div>
                 <div class="worker">
-                    <img id="worker_img" src="baruch.jpg" alt="" />
+                    <img id="worker_img" src="./public/baruch.jpg" alt="" />
                     <p id="worker_message">
-                        
-                        <strong>עו''ד ברוך אלפיה (ליווי משפטי ופיננסי)</strong>- יזם בתחום הפינטק, מומחה לניהול סיכונים והתאמות בתחום הפיננסי, שימש כסמנכ''לבכיר בכ.א.ל, שימש כיועץ לחברת ויזה העולמית. בוגר ביה''ס למנהל עסקים ע''ש רקנאטי לניהול עסקי בכיר. 
+
+                        <strong>עו''ד ברוך אלפיה (ליווי משפטי ופיננסי)</strong>- יזם בתחום הפינטק, מומחה לניהול סיכונים והתאמות בתחום הפיננסי, שימש כסמנכ''לבכיר בכ.א.ל, שימש כיועץ לחברת ויזה העולמית. בוגר ביה''ס למנהל עסקים ע''ש רקנאטי לניהול עסקי בכיר.
 
                     </p>
-                    <a href="https://www.linkedin.com/in/baruch-alfia-15a44433/"  target="_blank"><i class="fa fa-linkedin"></i
+                    <a href="https://www.linkedin.com/in/baruch-alfia-15a44433/" target="_blank"><i class="fa fa-linkedin"></i
                         ></a>
                 </div>
             </div>
             <div class="workers_row">
                 <div class="worker">
-                    <img id="worker_img" src="shimon.png" alt="" />
+                    <img id="worker_img" src="./public/shimon.png" alt="" />
                     <p id="worker_message">
-                        <strong>ד''ר שמעון מזרחי (פיתוח מערכות)</strong>- מומחה בתחום האלקטרוניקה ומערכות משובצות מחשב, הדמיות בתלת מימד ופיתוח טכנולוגי, משמש מרצה ומנחה פרוייקטים במכללת לב להנדסה ועל שמו רשומים פטנטים רבים וניסיון של עשרים שנים בפיתוח. בעל תואר שלישי במחשבים. 
+                        <strong>ד''ר שמעון מזרחי (פיתוח מערכות)</strong>- מומחה בתחום האלקטרוניקה ומערכות משובצות מחשב, הדמיות בתלת מימד ופיתוח טכנולוגי, משמש מרצה ומנחה פרוייקטים במכללת לב להנדסה ועל שמו רשומים פטנטים רבים וניסיון של עשרים שנים בפיתוח.
+                        בעל תואר שלישי במחשבים.
                     </p>
-                    <a href="https://www.linkedin.com/in/shimon-mizrahi-2417b784/"  target="_blank"><i class="fa fa-linkedin"></i
+                    <a href="https://www.linkedin.com/in/shimon-mizrahi-2417b784/" target="_blank"><i class="fa fa-linkedin"></i
                         ></a>
                 </div>
                 <div class="worker">
-                    <img id="worker_img" src="daniel.jpg" alt="" />
+                    <img id="worker_img" src="./public/daniel.jpg" alt="" />
                     <p id="worker_message">
                         <strong>פרופ' דניאל וייס (פיתוח פלטפורמה) </strong>- פרופ' אמריטוס בטכניון, מומחה מוביל בתחום הרובוטיקה ושימש בעבר כראש תחום רובוטיקה בטכניון, חבר האקדמיה הלאומית למדעים.
                     </p>
-                    <i class="fa fa-linkedin" id="linkedin-daniel"></i>
                 </div>
             </div>
         </section>
+        <section id="about">
+            <h1 id="about_head">על החברה</h1>
+            <p id="about_message">
+                אנו <strong>(iPIPE Ltd)</strong> חברת סטארט-אפ המנהלת מערכת מהפכנית המספקת בדיקה ישירה ויכולת ניהול מערכות של רשתות צנרת מי שתייה בלחץ בזמן שהצנרת פעילה.
+                <br><br> אנו מספקים פתרונות אפקטיביים לזיהוי ואיתור נזילות, ריתוכים לקויים, קורוזיה, חסימות, חיבורים לא מורשים וקטעי רשת ללא מיפוי.
+                <br><br> במימון <strong>משרד האנרגיה</strong> השגנו קשר אסטרטגי עם חברות מים מרכזיות בישראל -
+                <strong>"הגיחון"</strong>, <strong>מניב ראשון</strong> ו <strong>מאי הרצליה</strong>.
+            </p>
+
+        </section>
+
+        <div id="ticker">
+            <div id="headlines">
+                <h5 id="news">2018 - החברה קיבלה מענק פיתוח ממשרד האנרגיה והמים </h5>
+                <h5 id="news">2019 – הסכם לביצוע פיילוט עם חברת "הגיחון'' (תאגיד המים של ירושלים)</h5>
+                <h5 id="news">2019 – הסכם לביצוע פיילוט עם ''מניב ראשון'' (תאגיד המים של ראשון לציון) </h5>
+                <h5 id="news">2019 – אייפייפ הציגה את הטכנולוגיה שלה בתערוכת המים WATEC שהתקיימה בתל אביב</h5>
+                <h5 id="news">2019 – אייפייפ הציגה את הטכנולוגיה שלה בפני נשיא בולגריה בזמן ביקורו בישראל</h5>
+                <h5 id="news">2020 – החברה קיבלה מענק פיתוח מהרשות לחדשנות</h5>
+            </div>
+        </div>
 
         <section id="contact">
             <div id="row">
@@ -203,53 +209,19 @@
             </div>
             </form>
         </section>
-<!-- 
-        <div class="modal-container-news">
-            <div class="modal-container-content">
-                <section>
-                    <div class="news">
-                        <h1 class="news-heading">Header example for news div</h1>
-                        <div class="news-div-content">
-                            <div class="news-div-content-word">
-                                <p>is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and may be either open to the public or limited to use within an organization for maintaining its internal knowledge base.</p>
-                            </div>
-                            <img class="news-img" src="" alt="">
-                        </div>
-                    </div>
-                    <div class="news">
-                        <h1 class="news-heading">Header example for news div</h1>
-                        <div class="news-div-content">
-                            <div class="news-div-content-word">
-                                <p>is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and may be either open to the public or limited to use within an organization for maintaining its internal knowledge base.</p>
-                            </div>
-                            <img class="news-img" src="" alt="">
-                        </div>
-                    </div>
-                    <div class="news">
-                        <h1 class="news-heading">Header example for news div</h1>
-                        <div class="news-div-content">
-                            <div class="news-div-content-word">
-                                <p>is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and may be either open to the public or limited to use within an organization for maintaining its internal knowledge base.</p>
-                            </div>
-                            <img class="news-img" src="" alt="">
-                        </div>
-                    </div>
-                </section>
-                <button id="modal-container-close">X</button>
-        </div>
-    </div> -->
+
 
     </main>
 
     <footer class="footer-distributed">
         <div class="footer-right">
-            <img id="logo_footer" src="logo.jpg" alt="" />
+            <img id="logo_footer" src="./public/logo.jpg" alt="" />
             <p class="footer-links">
                 <a href="#" class="link-1">Home</a>
                 <a href="#about"> About</a>
             </p>
             <p class="footer-company-name">
-                Copyright © 2020 IPIPE TEC  <br>- כל הזכויות שמורות
+                Copyright © 2020 IPIPE TEC <br>- כל הזכויות שמורות
             </p>
         </div>
         <div class="footer-center">
@@ -274,23 +246,24 @@
             </p>
 
             <div class="footer-icons">
-                <a href="https://www.linkedin.com/in/tomer-rajuan-3406b0192/"  target="_blank"><i class="fa fa-linkedin"></i
+                <a href="https://www.linkedin.com/in/tomer-rajuan-3406b0192/" target="_blank"><i class="fa fa-linkedin"></i
           ></a>
                 <h3 id="my_contact">האתר נבנה ועוצב על ידי</h3>
-                <a id="tomer_rajuan" href="https://www.linkedin.com/in/tomer-rajuan-3406b0192/"  target="_blank">Tomer Rajuan</a>
+                <a id="tomer_rajuan" href="https://www.linkedin.com/in/tomer-rajuan-3406b0192/" target="_blank">Tomer Rajuan</a>
             </div>
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/jqBootstrapValidation.js"></script>
+    <script src="scriptHE.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
+</body>
 
-
-         <script src="script-he.js"></script>
-
-    </body>
 </html>

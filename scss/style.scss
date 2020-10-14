@@ -1,0 +1,118 @@
+@import "./_footer";
+@import "./_header-navbar";
+@import "./_challenge";
+@import "./_workers";
+@import "./_news";
+@import "./_smaller-screens";
+@import "./_contact";
+@import "./_solution";
+@import "./_technology";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,\a  500,\a 300,\a 700");
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "DIN";
+}
+
+@font-face {
+    font-family: "DIN";
+    src: url("../public/DINWeb.woff") format("woff");
+}
+
+#headlines {
+    white-space: nowrap;
+    position: absolute;
+    display: flex;
+    left: 0%;
+    padding-top: 7px;
+}
+
+#headlines h5 {
+    padding-right: 40px;
+    font-size: 16px;
+}
+
+#ticker {
+    position: relative;
+    overflow: hidden;
+    height: 3em;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+}
+
+#language-menu {
+    position: absolute;
+    margin-top: 90px;
+    right: 20px;
+    z-index: 1;
+    outline: none;
+    opacity: 0.6;
+}
+
+
+/* added classes */
+
+.tech {
+    border: 3px solid white;
+    transition-duration: 1s;
+}
+
+.active {
+    transition-duration: 0.5;
+    opacity: 1;
+    transform: translateY("50");
+}
+
+
+/* end of added classes  */
+
+
+/* about */
+
+#about {
+    height: auto;
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 5vh 0 10vh 0;
+    background: #F4FAFD;
+}
+
+#about_head {
+    padding-top: 6vh;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #0970A3;
+    margin-bottom: 3vh;
+    font-size: 56px;
+    text-align: center;
+}
+
+#about_message {
+    padding: 0 5vw;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+
+/* about END */
+
+#data {
+    -webkit-transform: rotatex(20deg);
+    transform: rotatex(20deg);
+    height: 48vh;
+    width: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    padding: 13px 0;
+    background: #333333;
+}
+
+
+/* the technology end*/

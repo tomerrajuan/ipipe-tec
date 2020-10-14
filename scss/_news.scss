@@ -1,0 +1,109 @@
+
+.modal-container-news {
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    visibility: hidden;
+  }
+  
+  .modal-container-news.on {
+    visibility: visible !important;
+  }
+  
+  .modal-container-content {
+    overflow: scroll;
+    width: 80vw;
+    height: 90vh;
+    background: white;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .modal-container-content button {
+    -ms-flex-item-align: end;
+    width: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 200;
+    border: 1px solid #24292e;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 1px;
+    box-shadow: 1px 1px 1px;
+    outline: none;
+    right: 11vw;
+  }
+  
+  .modal-container-content button:active {
+    margin-top: 1px;
+    margin-left: 2px;
+  }
+  
+  .modal-container-content section {
+    margin-top: 25px;
+  }
+  
+  .news {
+    width: 90%;
+    height: 300px;
+    border: 2px solid;
+    margin: 1% 5%;
+    padding: 10px;
+  }
+  
+  .news-heading {
+    padding: 9px;
+    width: 80%;
+    height: 40px;
+    line-height: 20px;
+    border: 2px solid red;
+    margin-left: 10px;
+  }
+  
+  .news-div-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 95%;
+    height: 85%;
+    padding: 15px 10px;
+  }
+  
+  .news-div-content-word {
+    width: 70%;
+    height: 200px;
+    padding: 8px;
+    border: 2px solid blue;
+    overflow: scroll;
+  }
+  
+  .news img {
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    border: 2px solid grey;
+  }

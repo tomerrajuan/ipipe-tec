@@ -1,63 +1,62 @@
 (function() {
-    var ham_menu = document.querySelector(".header-tablet");
-    var hamburger = document.querySelector(".hamburger");
-    var x = document.querySelector(".close-ham-menu");
-    var menu = document.querySelector(".header-tablet-menu");
-    var modal = document.querySelector(".modal");
-    var close = document.getElementById("modal-container-close");
-    // typing welcome message
+    let ham_menu = document.querySelector(".header-tablet");
+    let hamburger = document.getElementById("hamburger");
+    let x = document.getElementById("close-ham-menu");
+    let menu = document.getElementById(".header-tablet-menu");
+    let modal = document.querySelector(".modal");
+    let close = document.getElementById("modal-container-close");
+
 
     var headlines = $("#headlines");
     var links = $("h5");
-    var left = headlines.offset().left;
+    var right = ($(window).width() - (headlines.offset().left + headlines.outerWidth()))
     var anim;
-    // links.ep(0).outerWidth();
-    function movingHeads() {
-        left--;
 
-        if (left <= -links.eq(0).outerWidth()) {
-            left += links.eq(0).outerWidth();
+    function movingHeads() {
+
+
+        console.log("we are at moving heads");
+        right--;
+        if (right <= -links.eq(0).outerWidth()) {
+            right += links.eq(0).outerWidth();
             headlines.append(links.eq(0));
             links = headlines.find("h5");
         }
-        headlines.css("left", left);
+        headlines.css("right", right);
         anim = requestAnimationFrame(movingHeads);
     }
 
     $(headlines).on("mouseenter", function() {
-        console.log("event is on");
         cancelAnimationFrame(anim);
     });
 
     $(headlines).on("mouseleave", function() {
         movingHeads();
     });
-
     $(document).ready(function() {
-        setTimeout(typeWriter, 700);
         movingHeads();
+        // setTimeout(typeWriter, 700);
     });
 
-    var i = 0;
-    var txt = "World's solution for damaged water pipes";
-    var speed = 50;
 
-    function typeWriter() {
-        if (i < txt.length) {
-            document.getElementById("moving-headline").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        }
-    }
+
+    // var i = 0;
+    // var txt = "הפתרון העולמי לצנרות מים משובשות";
+    // var speed = 50;
+
+    // function typeWriter() {
+    //     if (i < txt.length) {
+    //         document.getElementById("moving-headline").innerHTML += txt.charAt(i);
+    //         i++;
+    //         setTimeout(typeWriter, speed);
+    //     }
+    // }
     // end of typing welcome message
 
     // scroll functions
-    window.onscroll = function() {
-        navbarCollapse();
-    };
+    window.onscroll = function() { navbarCollapse() };
 
     function navbarCollapse() {
-        console.log(window.pageYOffset);
         if (window.pageYOffset > 30) {
             $("header").addClass("shrink");
             $(".logo-header").addClass("logo-shrink");
@@ -78,7 +77,7 @@
         if (window.pageYOffset < 2100) {
             $("#data").removeClass("tech");
         }
-    }
+    };
 
     hamburger.addEventListener("click", function() {
         ham_menu.classList.add("on");
@@ -103,4 +102,10 @@
     close.addEventListener("click", function() {
         $(".modal-container-news").css("visibility", "hidden");
     });
+
+
+
+
+
+
 })();

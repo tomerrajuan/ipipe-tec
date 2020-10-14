@@ -1,0 +1,290 @@
+@media screen and (min-width: 200px) and (max-width: 860px) {
+    .footer-distributed {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+    .footer-center div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-distributed .footer-right .footer-center .footer-left {
+        margin-bottom: 5vh !important;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
+    .hamburger {
+        display: inline;
+        margin-right: 1vw;
+        float: right;
+        font-size: 30px;
+        align-self: center;
+    }
+    .navbar {
+        visibility: hidden;
+    }
+    #pipe_img {
+        margin-top: 4%;
+    }
+    .challenge {
+        margin-bottom: 0;
+    }
+    .challenge__head {
+        margin-top: 3%;
+        font-size: 28px;
+    }
+    .challenge__message {
+        width: 70vw;
+        font-size: 18px;
+        margin-bottom: 3%;
+        line-height: 20px;
+    }
+    .challenge-image {
+        height: 30vh;
+        padding-top: 3vh;
+    }
+    .solution {
+        padding-top: 3vh;
+        margin-bottom: 0vh;
+    }
+    .solution__head {
+        font-size: 24px;
+    }
+    .solution__message {
+        width: 85vw;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 7vh;
+    }
+    .solution__video {
+        height: 41vh;
+        width: 92vw !important;
+        margin-right: 4vw;
+    }
+    .technology {
+        margin-top: 6vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-item-align: center;
+        align-self: center;
+        padding-top: 7vh;
+        height: auto;
+        padding-bottom: 3vh;
+        background-color: white;
+    }
+    .technology__info {
+        width: 90vw;
+    }
+    .technology__head {
+        margin-top: 1vh;
+        font-size: 30px;
+        margin-bottom: 3%;
+        color: #0970A3;
+        width: 80vw;
+    }
+    .technology__message {
+        margin-bottom: 1.5%;
+        font-size: 15px;
+        width: 90vw;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        margin-left: 0;
+        line-height: 17px;
+        width: 80vw;
+        margin-bottom: 5vh;
+    }
+    #data {
+        width: 81vw;
+        height: auto;
+    }
+    #about {
+        height: auto !important;
+        padding: 50px 0
+    }
+    #about_message {
+        width: 90vw;
+        font-size: 18px;
+    }
+    #about_head {
+        font-size: 30px;
+    }
+    #headlines h5 {
+        font-size: 13px;
+    }
+    #our_team_header {
+        font-size: 34px;
+        margin-bottom: 6vh;
+    }
+    .workers_row {
+        margin-right: 0 !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+    }
+    .worker {
+        margin-bottom: 8%;
+        width: 70vw;
+    }
+    .worker_img {
+        height: 140px;
+        width: 140px;
+        border-radius: 85px;
+    }
+    #worker_message {
+        font-size: 14px;
+        width: 65vw;
+        margin-top: 3vh;
+    }
+    .modal-container-content button {
+        right: 12vw;
+    }
+    .modal-container-content section {
+        margin-top: 30px;
+    }
+    .news {
+        margin: 1% 1%;
+        height: auto;
+        width: 98%;
+    }
+    .news-heading {
+        font-size: 14px;
+        padding: 9px;
+        width: 90%;
+        height: 40px;
+        line-height: 20px;
+        border: 2px solid red;
+    }
+    .news-div-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .news-div-content-word {
+        width: 100%;
+        height: 200px;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        margin-top: 10px;
+        padding: 8px;
+        border: 2px solid blue;
+        overflow: scroll;
+    }
+    .news img {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        width: 190px;
+        height: 190px;
+        margin-left: 4%;
+        border: 2px solid grey;
+    }
+    /* contact section */
+    #row {
+        padding-top: 5vh;
+    }
+    #contact {
+        padding: 43px;
+        width: 90vw;
+        margin-right: 5vw;
+        margin-top: 0;
+        margin-bottom: 4vh;
+    }
+    .form {
+        width: 90%;
+        margin-right: 5%;
+    }
+    textarea {
+        width: 90%;
+    }
+    @media screen and (min-width: 515px) and (max-width: 670px) {
+        .modal-container-news.on {
+            visibility: hidden !important;
+        }
+    }
+    .footer-distributed {
+        padding: 4vh 3vw !important;
+    }
+    .footer-center {
+        width: 40vw;
+    }
+    @media screen and (min-width: 380px) and (max-width: 515px) {
+        .close-ham-menu {
+            margin-top: -0.5vh;
+            border: 2px solid;
+            padding: 0.5px 3px;
+            font-size: 10px;
+        }
+    }
+    @media screen and (min-width: 200px) and (max-width: 300px) {
+        .workers_row {
+            margin-left: 10vw;
+        }
+    }
+    @media screen and (min-width: 300px) and (max-width: 460px) {
+        .welcome_message h1 {
+            font-size: 31px;
+        }
+        .welcome_message h2 {
+            font-size: 16px;
+            margin-top: 1vh;
+            width: 80vw;
+            margin-left: 10vw;
+        }
+        #logo_footer {
+            margin-left: 5vw;
+        }
+        .navbar a {
+            font-size: 9px;
+        }
+        .challenge__message {
+            margin-top: 2vh;
+            line-height: 19px;
+        }
+        #contact {
+            padding: 30px 1px;
+            margin-top: 2vh;
+            margin-bottom: 5vh;
+            width: 90vw;
+            margin-left: 7vw;
+        }
+        #worker_message {
+            font-size: 14px;
+            line-height: 14px;
+            width: 65vw;
+            margin-top: 3vh;
+        }
+        .worker {
+            height: auto;
+        }
+        #team {
+            width: 90vw;
+            margin-right: 5vw;
+            padding-top: 9vh;
+        }
+        .solution__message {
+            margin-bottom: 5vh;
+        }
+        #pipe_explosion {
+            height: 35vh;
+            width: 100vw;
+        }
+        #about_message {
+            line-height: 19px;
+        }
+    }
+}

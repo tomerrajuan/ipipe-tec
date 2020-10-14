@@ -1,0 +1,41 @@
+/* the solution */
+
+.solution {
+    font-size: 21px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7vh;
+    margin-bottom: 15vh;
+    .solution__head {
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-top: 1%;
+        font-size: 56px;
+        color: #0970A3;
+        align-self: center;
+    }
+    .solution__message {
+        width: 51vw;
+        font-size: 22px;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        color: darkslategrey;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 4vh;
+    }
+    .solution__video {
+        height: 57vh;
+        width: 60vw;
+        border-radius: 5px;
+        margin-right: 20vw;
+    }
+    h3 {
+        font-size: 12px;
+    }
+}

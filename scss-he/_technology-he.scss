@@ -1,0 +1,36 @@
+/* the technology */
+
+.technology {
+    display: flex;
+    width: 90vw;
+    margin-right: 5vw;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    height: 75vh;
+    padding-top: 10vh;
+    padding-right: 10vw;
+    background: #0970A3;
+}
+
+.technology__info {
+    font-size: 21px;
+    width: 45vw;
+    margin-top: -2vh;
+}
+
+.technology__head {
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: white;
+    font-size: 46px;
+    margin: 4vh 6vw;
+}
+
+.technology__message {
+    width: 43vw;
+    font-size: 17px;
+    margin-right: 1vw;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 20px;
+}

@@ -1,0 +1,103 @@
+.footer {
+    margin-top: 10vh;
+    background-color: #0970A3;
+    padding: 30px 50px;
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+}
+
+.footer--left {
+    color: #ffffff;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer__logo {
+        height: 50px;
+        width: 70px;
+    }
+    .footer__links {
+        display: flex;
+        margin: 20px 0 12px;
+        padding: 0;
+        a {
+            display: inline-block;
+            line-height: 1.8;
+            font-weight: 400;
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    .footer--left__copyright {
+        font-size: 14px;
+        text-align: center;
+        font-weight: normal;
+        margin: 0;
+    }
+}
+
+.footer--center {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    i {
+        background-color: #33383b;
+        color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+    }
+    i.fa-envelope {
+        font-size: 17px;
+    }
+    .footer--center__box {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        font-weight: 400;
+        span {
+            display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 2;
+        }
+        a {
+            color: #ffffff;
+        }
+    }
+}
+
+.footer--right {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    padding-top: 20px;
+    i {
+        background-color: #33383b;
+        color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+    }
+    a,
+    p {
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+        font-weight: normal;
+        margin: 1px;
+    }
+}
