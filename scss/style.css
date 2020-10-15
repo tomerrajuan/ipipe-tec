@@ -147,7 +147,7 @@ header {
   right: 4vw;
   position: fixed;
   cursor: pointer;
-  color: #0970A3;
+  color: white;
 }
 
 .header-tablet {
@@ -225,7 +225,9 @@ header {
 
 .welcome {
   position: absolute;
-  top: 68%;
+  display: flex;
+  flex-direction: column;
+  top: 20vh;
   left: 3%;
   padding: 1%;
   background: rgba(0, 0, 0, 0.3);
@@ -234,26 +236,24 @@ header {
 
 .welcome_message {
   position: absolute;
-  text-shadow: 1px 1px 2px #000;
+  width: 600px;
+  height: 200px;
   z-index: 2;
-  width: 100vw;
-  text-align: center;
-  height: auto;
-  margin-top: 41vh;
+  margin-top: 61vh;
+  margin-left: 4vw;
+  text-shadow: 1px 1px 2px #000;
   letter-spacing: 1px;
   overflow: hidden;
+  color: white;
 }
 .welcome_message h1 {
-  font-size: 45px;
+  font-size: 75px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: white;
 }
 .welcome_message h2 {
   font-size: 22px;
-  width: 60vw;
-  margin-left: 20vw;
-  color: white;
+  margin-left: 10vw;
   font-weight: 700;
   text-align: center;
 }
@@ -485,6 +485,29 @@ header {
 }
 
 @media screen and (min-width: 200px) and (max-width: 900px) {
+  .welcome {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20vh;
+    left: 3%;
+    padding: 1%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+  }
+
+  .welcome_message {
+    width: 440px;
+    margin-top: 50vh;
+  }
+  .welcome_message h1 {
+    font-size: 45px;
+  }
+  .welcome_message h2 {
+    margin-left: 5vw;
+    font-size: 17px;
+  }
+
   .hamburger {
     display: inline;
     margin-right: 1vw;
@@ -495,41 +518,6 @@ header {
 
   .navbar {
     visibility: hidden;
-  }
-
-  #pipe_img {
-    -o-object-fit: contain;
-    object-fit: contain;
-    width: 100vw;
-    height: 380px;
-  }
-
-  .welcome_message {
-    position: absolute;
-    z-index: 2;
-    width: 100vw;
-    text-align: center;
-    height: auto;
-    margin-top: 170px;
-    letter-spacing: 1px;
-    overflow: hidden;
-    visibility: hidden;
-  }
-
-  .welcome_message h2 {
-    font-size: 19px;
-    width: 60vw;
-    margin-left: 20vw;
-    color: white;
-    font-weight: 700;
-    text-align: center;
-  }
-
-  .welcome_message h1 {
-    font-size: 45px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: white;
   }
 
   #pipe_img {
@@ -585,7 +573,7 @@ header {
 
   .solution__video {
     height: 41vh;
-    width: 100vw;
+    width: 100vw !important;
     margin-left: 0 !important;
   }
 
@@ -660,19 +648,14 @@ header {
   }
 
   .team-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: column !important;
     margin-left: 5vw;
   }
 
   .worker {
     margin-bottom: 8%;
-    width: 70vw;
+    width: 70vw !important;
   }
 
   .worker__img {
@@ -770,12 +753,16 @@ footer .footer--center {
     border-bottom: 1px solid white;
   }
 }
-@media screen and (min-width: 515px) and (max-width: 670px) {
+@media screen and (min-width: 570px) and (max-width: 670px) {
   .modal-container-news.on {
     visibility: hidden !important;
   }
 }
-@media screen and (min-width: 380px) and (max-width: 515px) {
+@media screen and (min-width: 380px) and (max-width: 570px) {
+  .welcome_message {
+    display: none;
+  }
+
   .team-row {
     margin-left: 10vw;
   }
@@ -791,18 +778,7 @@ footer .footer--center {
   }
 }
 @media screen and (min-width: 300px) and (max-width: 460px) {
-  .welcome_message h1 {
-    font-size: 31px;
-  }
-
-  .welcome_message h2 {
-    font-size: 16px;
-    margin-top: 1vh;
-    width: 80vw;
-    margin-left: 10vw;
-  }
-
-  .navbar a {
+  F .navbar a {
     font-size: 9px;
   }
 
@@ -1064,7 +1040,6 @@ button:active {
   font-size: 46px;
 }
 .technology .technology__message {
-  width: 43vw;
   font-size: 21px;
   letter-spacing: 1px;
   font-weight: 400;

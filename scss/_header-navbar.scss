@@ -43,7 +43,7 @@ header {
     right: 4vw;
     position: fixed;
     cursor: pointer;
-    color: #0970A3;
+    color: white;
 }
 
 .header-tablet {
@@ -129,7 +129,9 @@ header {
 
 .welcome {
     position: absolute;
-    top: 68%;
+    display: flex;
+    flex-direction: column;
+    top: 20vh;
     left: 3%;
     padding: 1%;
     background: rgba(0, 0, 0, 0.3);
@@ -138,25 +140,23 @@ header {
 
 .welcome_message {
     position: absolute;
-    text-shadow: 1px 1px 2px #000;
+    width: 600px;
+    height: 200px;
     z-index: 2;
-    width: 100vw;
-    text-align: center;
-    height: auto;
-    margin-top: 41vh;
+    margin-top: 61vh;
+    margin-left: 4vw;
+    text-shadow: 1px 1px 2px #000;
     letter-spacing: 1px;
     overflow: hidden;
+    color: white;
     h1 {
-        font-size: 45px;
+        font-size: 75px;
         font-weight: 700;
         letter-spacing: 1px;
-        color: white;
     }
     h2 {
         font-size: 22px;
-        width: 60vw;
-        margin-left: 20vw;
-        color: white;
+        margin-left: 10vw;
         font-weight: 700;
         text-align: center;
     }

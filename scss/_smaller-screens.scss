@@ -1,4 +1,25 @@
 @media screen and (min-width: 200px) and (max-width: 900px) {
+    .welcome {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 20vh;
+        left: 3%;
+        padding: 1%;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 6px;
+    }
+    .welcome_message {
+        width: 440px;
+        margin-top: 50vh;
+        h1 {
+            font-size: 45px;
+        }
+        h2 {
+            margin-left: 5vw;
+            font-size: 17px;
+        }
+    }
     .hamburger {
         display: inline;
         margin-right: 1vw;
@@ -8,37 +29,6 @@
     }
     .navbar {
         visibility: hidden;
-    }
-    #pipe_img {
-        -o-object-fit: contain;
-        object-fit: contain;
-        width: 100vw;
-        height: 380px;
-    }
-    .welcome_message {
-        position: absolute;
-        z-index: 2;
-        width: 100vw;
-        text-align: center;
-        height: auto;
-        margin-top: 170px;
-        letter-spacing: 1px;
-        overflow: hidden;
-        visibility: hidden;
-    }
-    .welcome_message h2 {
-        font-size: 19px;
-        width: 60vw;
-        margin-left: 20vw;
-        color: white;
-        font-weight: 700;
-        text-align: center;
-    }
-    .welcome_message h1 {
-        font-size: 45px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: white;
     }
     #pipe_img {
         width: 100vw;
@@ -85,7 +75,7 @@
     }
     .solution__video {
         height: 41vh;
-        width: 100vw;
+        width: 100vw !important;
         margin-left: 0 !important;
     }
     .technology {
@@ -149,18 +139,13 @@
         margin-bottom: 6vh;
     }
     .team-row {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        flex-direction: column !important;
         margin-left: 5vw;
     }
     .worker {
         margin-bottom: 8%;
-        width: 70vw;
+        width: 70vw !important;
     }
     .worker__img {
         height: 140px;
@@ -245,13 +230,16 @@
     }
 }
 
-@media screen and (min-width: 515px) and (max-width: 670px) {
+@media screen and (min-width: 570px) and (max-width: 670px) {
     .modal-container-news.on {
         visibility: hidden !important;
     }
 }
 
-@media screen and (min-width: 380px) and (max-width: 515px) {
+@media screen and (min-width: 380px) and (max-width: 570px) {
+    .welcome_message {
+        display: none;
+    }
     .team-row {
         margin-left: 10vw;
     }
@@ -270,16 +258,7 @@
 }
 
 @media screen and (min-width: 300px) and (max-width: 460px) {
-    .welcome_message h1 {
-        font-size: 31px;
-    }
-    .welcome_message h2 {
-        font-size: 16px;
-        margin-top: 1vh;
-        width: 80vw;
-        margin-left: 10vw;
-    }
-    .navbar a {
+    F .navbar a {
         font-size: 9px;
     }
     .challenge__message {
