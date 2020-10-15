@@ -1,13 +1,13 @@
 (function() {
     let ham_menu = document.querySelector(".header-tablet");
-    let hamburger = document.getElementById("hamburger");
-    let x = document.getElementById("close-ham-menu");
-    let menu = document.getElementById(".header-tablet-menu");
+    let hamburger = document.querySelector("hamburger");
+    let x = document.querySelector("close-ham-menu");
+    let menu = document.querySelector(".header-tablet-menu");
     let modal = document.querySelector(".modal");
-    let close = document.getElementById("modal-container-close");
+    let close = document.querySelector("modal-container-close");
 
 
-    var headlines = $("#headlines");
+    var headlines = document.querySelector(".ticker-headlines");
     var links = $("h5");
     var right = ($(window).width() - (headlines.offset().left + headlines.outerWidth()))
     var anim;
@@ -72,10 +72,10 @@
             $(".challenge__image").removeClass("bigger");
         }
         if (window.pageYOffset > 2100) {
-            $("#data").addClass("tech");
+            $(".technology__video").addClass("tech");
         }
         if (window.pageYOffset < 2100) {
-            $("#data").removeClass("tech");
+            $(".technology__video").removeClass("tech");
         }
     };
 

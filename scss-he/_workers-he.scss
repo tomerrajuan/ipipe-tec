@@ -1,13 +1,13 @@
 /* workers section */
 
-#team {
+.team {
     width: 80vw;
     margin-right: 10vw;
     padding-top: 5%;
     margin-bottom: 12vh;
 }
 
-#our_team_header {
+.team__header {
     letter-spacing: 1px;
     font-weight: 400;
     font-size: 48px;
@@ -16,31 +16,20 @@
     margin-bottom: 8vh;
 }
 
-.workers_row {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.team-row {
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     margin-right: 7vw;
 }
 
 .worker {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     width: 30vw;
     height: 500px;
     margin-bottom: 2vh;
     margin-right: 2vw;
     padding: 15px 5px;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
     border: 1px solid;
 }
@@ -64,8 +53,6 @@
     text-align: center;
     line-height: 35px;
     margin-top: 10px;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
     align-self: center;
 }
 
@@ -73,18 +60,15 @@
     border: 1px solid;
 }
 
-.worker_img {
+.worker__img {
     height: 200px;
     width: 200px;
     border-radius: 118px;
-    -o-object-fit: cover;
     object-fit: cover;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
     align-self: center;
 }
 
-#worker_message {
+.worker__message {
     color: darkslategrey;
     font-size: 14px;
     width: 100%;

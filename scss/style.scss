@@ -5,8 +5,8 @@
 @import "./_news";
 @import "./_smaller-screens";
 @import "./_contact";
-@import "./_solution";
-@import "./_technology";
+@import "./solution";
+@import "./technology";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,\a  500,\a 300,\a 700");
 * {
     -webkit-box-sizing: border-box;
@@ -20,7 +20,7 @@
     src: url("../public/DINWeb.woff") format("woff");
 }
 
-#headlines {
+.headlines {
     white-space: nowrap;
     position: absolute;
     display: flex;
@@ -28,12 +28,12 @@
     padding-top: 7px;
 }
 
-#headlines h5 {
+.headlines h5 {
     padding-right: 40px;
     font-size: 16px;
 }
 
-#ticker {
+.ticker {
     position: relative;
     overflow: hidden;
     height: 3em;
@@ -70,7 +70,7 @@
 
 /* about */
 
-#about {
+.about {
     height: auto;
     width: 90vw;
     margin-left: 5vw;
@@ -81,7 +81,7 @@
     background: #F4FAFD;
 }
 
-#about_head {
+.about__head {
     padding-top: 6vh;
     letter-spacing: 1px;
     font-weight: 400;
@@ -91,7 +91,7 @@
     text-align: center;
 }
 
-#about_message {
+.about__message {
     padding: 0 5vw;
     font-size: 18px;
     text-align: center;
@@ -99,20 +99,3 @@
     font-weight: 400;
     line-height: 23px;
 }
-
-
-/* about END */
-
-#data {
-    -webkit-transform: rotatex(20deg);
-    transform: rotatex(20deg);
-    height: 48vh;
-    width: auto;
-    -o-object-fit: contain;
-    object-fit: contain;
-    padding: 13px 0;
-    background: #333333;
-}
-
-
-/* the technology end*/

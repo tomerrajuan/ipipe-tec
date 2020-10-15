@@ -20,7 +20,7 @@
     src: url("../public/DINWeb.woff") format("woff");
 }
 
-#headlines {
+.ticker-headlines {
     white-space: nowrap;
     position: absolute;
     display: flex;
@@ -28,12 +28,12 @@
     padding-top: 7px;
 }
 
-#headlines h5 {
+.news {
     padding-right: 40px;
     font-size: 16px;
 }
 
-#ticker {
+.ticker {
     position: relative;
     overflow: hidden;
     height: 3em;
@@ -73,7 +73,7 @@
 
 /* about */
 
-#about {
+.about {
     height: auto;
     width: 90vw;
     margin-right: 5vw;
@@ -83,7 +83,7 @@
     background: #0970A3;
 }
 
-#about_head {
+.about__head {
     padding-top: 6vh;
     letter-spacing: 1px;
     font-weight: 400;
@@ -93,7 +93,7 @@
     text-align: center;
 }
 
-#about_message {
+.about__message {
     padding: 0 5vw;
     font-size: 18px;
     text-align: center;
@@ -105,7 +105,7 @@
 
 /* about END */
 
-#data {
+.technology__video {
     -webkit-transform: rotatex(20deg);
     transform: rotatex(20deg);
     height: 48vh;
@@ -115,6 +115,3 @@
     padding: 13px 0;
     background: #333333;
 }
-
-
-/* the technology end*/

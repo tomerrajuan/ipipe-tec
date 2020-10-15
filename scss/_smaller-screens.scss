@@ -126,29 +126,29 @@
         width: 80vw;
         margin-bottom: 5vh;
     }
-    #data {
+    .technology__video {
         width: 81vw;
         height: auto;
     }
-    #about {
+    .about {
         height: auto !important;
         padding: 50px 0;
     }
-    #about_message {
+    .about__message {
         width: 90vw;
         font-size: 18px;
     }
-    #about_head {
+    .about__head {
         font-size: 30px;
     }
-    #headlines h5 {
+    .news {
         font-size: 13px;
     }
-    #our_team_header {
+    .team__header {
         font-size: 24px;
         margin-bottom: 6vh;
     }
-    .workers_row {
+    .team-row {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -162,12 +162,12 @@
         margin-bottom: 8%;
         width: 70vw;
     }
-    .worker_img {
+    .worker__img {
         height: 140px;
         width: 140px;
         border-radius: 85px;
     }
-    #worker_message {
+    .worker__message {
         font-size: 14px;
         width: 65vw;
         margin-top: 3vh;
@@ -252,19 +252,19 @@
 }
 
 @media screen and (min-width: 380px) and (max-width: 515px) {
-    .workers_row {
+    .team-row {
         margin-left: 10vw;
     }
 }
 
 @media screen and (min-width: 300px) and (max-width: 420px) {
-    .workers_row {
+    .team-row {
         margin-left: 10vw;
     }
 }
 
 @media screen and (min-width: 200px) and (max-width: 300px) {
-    .workers_row {
+    .team-row {
         margin-left: 10vw;
     }
 }
@@ -293,7 +293,7 @@
         width: 90vw;
         margin-left: 7vw;
     }
-    #worker_message {
+    .worker__message {
         font-size: 14px;
         line-height: 14px;
         width: 65vw;
@@ -302,7 +302,7 @@
     .worker {
         height: auto;
     }
-    #team {
+    .team {
         width: 90vw;
         margin-left: 5vw;
         padding-top: 9vh;
@@ -314,10 +314,10 @@
         height: 35vh;
         width: 100vw;
     }
-    #about_message {
+    .about__message {
         line-height: 19px;
     }
-    .workers_row {
+    .team-row {
         margin-left: 10vw;
     }
 }

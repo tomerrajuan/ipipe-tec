@@ -7,7 +7,7 @@
     var close = document.getElementById("modal-container-close");
     // typing welcome message
 
-    var headlines = $("#headlines");
+    var headlines = $(".headlines");
     var links = $("h5");
     var left = headlines.offset().left;
     var anim;
@@ -73,10 +73,10 @@
             $(".challenge__image").removeClass("bigger");
         }
         if (window.pageYOffset > 2100) {
-            $("#data").addClass("tech");
+            $(".technology__video").addClass("tech");
         }
         if (window.pageYOffset < 2100) {
-            $("#data").removeClass("tech");
+            $(".technology__video").removeClass("tech");
         }
     }
 

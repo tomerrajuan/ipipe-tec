@@ -101,29 +101,29 @@
         width: 80vw;
         margin-bottom: 5vh;
     }
-    #data {
+    .technology__video {
         width: 81vw;
         height: auto;
     }
-    #about {
+    .about {
         height: auto !important;
         padding: 50px 0
     }
-    #about_message {
+    .about__message {
         width: 90vw;
         font-size: 18px;
     }
-    #about_head {
+    .about__head {
         font-size: 30px;
     }
-    #headlines h5 {
+    .news {
         font-size: 13px;
     }
-    #our_team_header {
+    .team__header {
         font-size: 34px;
         margin-bottom: 6vh;
     }
-    .workers_row {
+    .team-row {
         margin-right: 0 !important;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -138,12 +138,12 @@
         margin-bottom: 8%;
         width: 70vw;
     }
-    .worker_img {
+    .worker__img {
         height: 140px;
         width: 140px;
         border-radius: 85px;
     }
-    #worker_message {
+    .worker__message {
         font-size: 14px;
         width: 65vw;
         margin-top: 3vh;
@@ -231,7 +231,7 @@
         }
     }
     @media screen and (min-width: 200px) and (max-width: 300px) {
-        .workers_row {
+        .team-row {
             margin-left: 10vw;
         }
     }
@@ -262,7 +262,7 @@
             width: 90vw;
             margin-left: 7vw;
         }
-        #worker_message {
+        .worker__message {
             font-size: 14px;
             line-height: 14px;
             width: 65vw;
@@ -271,7 +271,7 @@
         .worker {
             height: auto;
         }
-        #team {
+        .team {
             width: 90vw;
             margin-right: 5vw;
             padding-top: 9vh;
@@ -283,7 +283,7 @@
             height: 35vh;
             width: 100vw;
         }
-        #about_message {
+        .about_message {
             line-height: 19px;
         }
     }
