@@ -3,10 +3,11 @@
 @import "./_challenge-he";
 @import "./_workers-he";
 @import "./_news-he";
-@import "./_smaller-screens-he";
 @import "./_contact-he";
 @import "./_solution-he";
-@import "./technology-he";
+@import "./_about-he";
+@import "./_welcome-he";
+@import "./_technology-he";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,\a  500,\a 300,\a 700");
 * {
     -webkit-box-sizing: border-box;
@@ -20,98 +21,19 @@
     src: url("../public/DINWeb.woff") format("woff");
 }
 
-.ticker-headlines {
-    white-space: nowrap;
-    position: absolute;
-    display: flex;
-    left: 0%;
-    padding-top: 7px;
-}
-
-.news {
-    padding-right: 40px;
-    font-size: 16px;
-}
-
-.ticker {
-    position: relative;
-    overflow: hidden;
-    height: 3em;
-    border-bottom: 1px solid black;
-    padding-top: 5px;
-}
-
-#language-menu {
-    position: absolute;
-    margin-top: 90px;
-    left: 20px;
-    z-index: 1;
-    outline: none;
-    opacity: 0.6;
-}
-
 
 /* added classes */
 
 .tech {
     border: 3px solid white;
-    -webkit-transition-duration: 1s;
     transition-duration: 1s;
 }
 
 .active {
-    -webkit-transition-duration: 0.5;
     transition-duration: 0.5;
     opacity: 1;
-    -webkit-transform: translateY("50");
     transform: translateY("50");
 }
 
 
 /* end of added classes  */
-
-
-/* about */
-
-.about {
-    height: auto;
-    width: 90vw;
-    margin-right: 5vw;
-    display: flex;
-    flex-direction: column;
-    padding: 5vh 0 10vh 0;
-    background: #0970A3;
-}
-
-.about__head {
-    padding-top: 6vh;
-    letter-spacing: 1px;
-    font-weight: 400;
-    color: white;
-    margin-bottom: 3vh;
-    font-size: 56px;
-    text-align: center;
-}
-
-.about__message {
-    padding: 0 5vw;
-    font-size: 18px;
-    text-align: center;
-    letter-spacing: 1px;
-    font-weight: 400;
-    line-height: 23px;
-}
-
-
-/* about END */
-
-.technology__video {
-    -webkit-transform: rotatex(20deg);
-    transform: rotatex(20deg);
-    height: 48vh;
-    width: auto;
-    -o-object-fit: contain;
-    object-fit: contain;
-    padding: 13px 0;
-    background: #333333;
-}

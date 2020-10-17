@@ -117,56 +117,21 @@ header {
 
 /* end navbar */
 
-
-/* welcome section */
-
-#pipe_img {
-    object-fit: cover;
-    width: 100vw;
-    height: 85vh;
-    margin-top: 65px;
-}
-
-.welcome {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 20vh;
-    left: 3%;
-    padding: 1%;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 6px;
-}
-
-.welcome_message {
-    position: absolute;
-    width: 600px;
-    height: 200px;
-    z-index: 2;
-    margin-top: 61vh;
-    margin-left: 4vw;
-    text-shadow: 1px 1px 2px #000;
-    letter-spacing: 1px;
-    overflow: hidden;
-    color: white;
-    h1 {
-        font-size: 75px;
-        font-weight: 700;
-        letter-spacing: 1px;
+@media screen and (min-width: 200px) and (max-width: 900px) {
+    .navbar {
+        visibility: hidden;
     }
-    h2 {
-        font-size: 22px;
-        margin-left: 10vw;
-        font-weight: 700;
-        text-align: center;
+    .hamburger {
+        display: inline;
+        margin-right: 1vw;
+        float: right;
+        font-size: 30px;
+        align-self: center;
     }
 }
 
-#welcome {
-    color: white;
-    font-size: 35px;
-    font-weight: 600;
+@media screen and (min-width: 300px) and (max-width: 570px) {
+    .navbar a {
+        font-size: 12px;
+    }
 }
-
-
-/* end welcome section */

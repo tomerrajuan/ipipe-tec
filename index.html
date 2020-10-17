@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <title>Ipipe</title>
+    <title>ipipe - Mapping water distribution networks</title>
     <link rel="stylesheet" href="./scss/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg" />
+    <link rel="shortcut icon" type="image/jpg" href="./public/logo.jpg" />
     <script src="./public/https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./public/https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -69,15 +69,15 @@
 
         <div class="welcome_message">
             <h1>Welcome to ipipe</h1>
-            <h2 id="moving-headline"></h2>
+            <h2 class="moving-headline"></h2>
         </div>
-        <select id="language-menu" onchange="location = this.value;">
+        <select class="language-menu" onchange="location = this.value;">
                 <option value="index.html">English</option>
                 <option value="index-he.html">עברית</option>
             </select>
-        <img id="pipe_img" src="./public/pipe2.jpeg" alt="" />
+        <img class="pipe_img" src="./public/pipe2.jpeg" alt="" />
 
-        <section class="challenge">
+        <section id="challenge">
             <h1 class="challenge__head">The Challenge</h1>
             <p class="challenge__message">
                 <strong>
@@ -96,7 +96,7 @@
 
    
 
-        <section class="solution">
+        <section id="solution">
             <h1 class="solution__head">The Solution</h1>
             <p class="solution__message">
                 <strong>iPIPE's</strong> innovative solution is a mini wireless device ("submarine") capable of maneuvering inside active pressurized water distribution networks while they are in use, inspecting and providing precise information
@@ -108,7 +108,7 @@
             </h3>
         </section>
 
-        <section class="technology">
+        <section id="technology">
             <div class="technology__info">
                 <h1 class="technology__head">The Technology</h1>
                 <p class="technology__message">
@@ -120,7 +120,7 @@
             <img class="technology__data" src="./public/data.jpg" alt="" />
         </section>
 
-        <section class="team">
+        <section id="team">
             <h1 class="team__header">Our Team of Experts</h1>
             <div class="team-row">
 
@@ -163,7 +163,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section id="about">
             <h1 class="about__head">About Us</h1>
             <p class="about__message">
                 "<strong>iPIPE Ltd</strong>." is a start-up company managin a revolutionary system that provides direct inspection and asset management capability of potable water pressurized pipe networks while the pipe is still active.

@@ -101,3 +101,14 @@
         margin: 1px;
     }
 }
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        .footer--left,
+        .footer--center {
+            border-bottom: 1px solid white;
+        }
+    }
+}

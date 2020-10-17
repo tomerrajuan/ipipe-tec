@@ -1,27 +1,21 @@
-/* contact section */
 #contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     padding-top: 5%;
-    width: 70vw;
+    width: 90vw;
     border-radius: 5px;
-    margin-right: 15vw;
+    margin-right: 5vw;
     margin-top: 5vh;
     padding-top: 10vh;
-  }
-  
-  .contact :hover {
+}
+
+.contact :hover {
     -webkit-box-shadow: 2px 2px 2px;
     box-shadow: 2px 2px 2px;
-  }
-  
-  .contact {
+}
+
+.contact {
     font-family: sans-serif;
     text-align: center;
     color: #0970A3;
@@ -29,9 +23,10 @@
     font-weight: 400;
     margin-bottom: 31px;
     line-height: 42px;
-  }
-  
-  .form {
+    text-transform: uppercase;
+}
+
+.form {
     height: 50px;
     position: relative;
     font-size: 14px;
@@ -40,9 +35,9 @@
     margin-right: 15%;
     overflow: hidden;
     margin-bottom: 30px;
-  }
-  
-  .form input {
+}
+
+.form input {
     width: 100%;
     height: 100%;
     color: #595f6e;
@@ -50,9 +45,9 @@
     border: none;
     outline: none;
     font-size: 16px;
-  }
-  
-  textarea {
+}
+
+textarea {
     font-size: 14px;
     min-height: 130px;
     max-height: 400px;
@@ -66,20 +61,19 @@
     margin-bottom: 15px;
     resize: vertical;
     outline: none;
-  }
-  
-  
-  .form label {
+}
+
+.form label {
     position: absolute;
     pointer-events: none;
     right: 0;
     width: 100%;
     height: 100%;
     border-bottom: 2px solid grey;
-    text-align: left;
-  }
-  
-  .form label::after {
+    text-align: right;
+}
+
+.form label::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -93,35 +87,35 @@
     transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  }
-  
-  .content-name {
+}
+
+.content-name {
     position: absolute;
     bottom: 8px;
     right: 0;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-  }
-  
-  .form input:focus + .label-name .content-name,
-  .form input:valid + .label-name .content-name {
+}
+
+.form input:focus+.label-name .content-name,
+.form input:valid+.label-name .content-name {
     -webkit-transform: translateY(-130%);
     transform: translateY(-130%);
-  }
-  
-  .form input:focus + .label-name::after,
-  .form input:valid + .label-name::after {
+}
+
+.form input:focus+.label-name::after,
+.form input:valid+.label-name::after {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
-  }
-  
-  .container {
+}
+
+.container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-  }
-  
-  #sendMessageButton {
+}
+
+#sendMessageButton {
     color: #444444;
     background: #f3f3f3;
     border: 2px #dadada solid;
@@ -132,25 +126,54 @@
     margin-top: 5px;
     outline: none;
     cursor: pointer;
-  }
-  
-  #sendMessageButton:hover {
+}
+
+#sendMessageButton:hover {
     border: 2px #3eb9ec solid;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     border: 1px #c6c6c6 solid;
     -webkit-box-shadow: 2px 2px 2px #eaeaea;
     box-shadow: 2px 2px 2px #eaeaea;
     color: #333333;
     background: #f7f7f7;
-  }
-  
-  button:active {
+}
+
+button:active {
     -webkit-box-shadow: inset 1px 1px 1px #dfdfdf;
     box-shadow: inset 1px 1px 2px #dfdfdf;
-  }
-  
-  /* end contact section */
-  
-  
+}
+
+
+/* end contact section */
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
+    /* contact section */
+    #row {
+        padding-top: 5vh;
+    }
+    #contact {
+        width: 90vw;
+        margin-right: 5vw;
+        margin-top: 0;
+        margin-bottom: 4vh;
+    }
+    .form {
+        width: 90%;
+        margin-right: 5%;
+    }
+    textarea {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 460px) {
+    #contact {
+        padding: 30px 1px;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        width: 90vw;
+        margin-right: 7vw;
+    }
+}

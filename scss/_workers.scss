@@ -1,74 +1,113 @@
-.team {
-    width: 80vw;
-    margin-left: 10vw;
-    padding-top: 5%;
-    margin-bottom: 12vh;
-    .team__header {
-        letter-spacing: 1px;
-        font-weight: 400;
-        font-size: 48px;
-        color: #0970A3;
-        text-align: center;
-        margin-bottom: 8vh;
-    }
-    .team-row {
-        display: flex;
-        flex-direction: row;
+    #team {
+        width: 80vw;
         margin-left: 10vw;
-    }
-    .worker {
+        padding-top: 5%;
+        margin-bottom: 12vh;
         display: flex;
         flex-direction: column;
-        width: 30vw;
-        height: 500px;
-        margin-bottom: 2vh;
-        margin-right: 2vw;
-        padding: 15px 5px;
-        justify-content: space-between;
-        border: 1px solid;
-        a {
-            width: 35px;
-            height: 35px;
-            cursor: pointer;
-            background-color: #33383b;
-            border-radius: 2px;
-            font-size: 20px;
-            color: #ffffff;
+        .team__header {
+            letter-spacing: 1px;
+            font-weight: 400;
+            font-size: 48px;
+            color: #0970A3;
             text-align: center;
-            line-height: 35px;
-            margin-top: 10px;
-            align-self: center;
-            justify-self: flex-end;
+            margin-bottom: 8vh;
         }
-        .worker:hover {
-            -webkit-box-shadow: 0 4px 8px;
-            box-shadow: 0 4px 8px;
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+        .team-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
         }
-        .worker a:hover {
+        .worker {
+            display: flex;
+            flex-direction: column;
+            width: 35vw;
+            height: auto;
+            margin-bottom: 2vh;
+            margin-right: 2vw;
+            padding: 15px 5px;
+            justify-content: space-between;
             border: 1px solid;
+            a {
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+                background-color: #33383b;
+                border-radius: 2px;
+                font-size: 20px;
+                color: #ffffff;
+                text-align: center;
+                line-height: 35px;
+                margin-top: 10px;
+                align-self: center;
+                justify-self: flex-end;
+            }
+            &:hover {
+                box-shadow: 0 4px 8px;
+                animation-duration: 1s;
+            }
+        }
+        .worker__image {
+            height: 200px;
+            width: 200px;
+            margin-bottom: 20px;
+            border-radius: 118px;
+            object-fit: cover;
+            align-self: center;
+        }
+        .worker__message {
+            color: darkslategrey;
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+            padding: 0 5%;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            margin-bottom: 1vh;
+        }
+        .worker-daniel {
+            justify-content: start;
         }
     }
-    .worker__image {
-        height: 200px;
-        width: 200px;
-        margin-bottom: 20px;
-        border-radius: 118px;
-        object-fit: cover;
-        align-self: center;
+    
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+        .team__header {
+            font-size: 24px;
+            margin-bottom: 6vh;
+        }
+        .team-row {
+            display: flex;
+            flex-direction: column !important;
+            margin-left: 5vw;
+        }
+        .worker {
+            margin-bottom: 8%;
+            width: 70vw !important;
+        }
+        .worker__image {
+            height: 140px !important;
+            width: 140px !important;
+        }
+        .worker__message {
+            font-size: 14px;
+            width: 65vw;
+            margin-top: 3vh;
+        }
     }
-    .worker__message {
-        color: darkslategrey;
-        font-size: 16px;
-        width: 100%;
-        text-align: center;
-        padding: 0 5%;
-        line-height: 20px;
-        letter-spacing: 0.5px;
-        margin-bottom: 1vh;
+    
+    @media screen and (min-width: 300px) and (max-width: 460px) {
+        .worker__message {
+            font-size: 14px;
+            line-height: 14px;
+            width: 65vw;
+            margin-top: 3vh;
+        }
+        .worker {
+            height: auto;
+        }
+        #team {
+            width: 90vw;
+            margin-left: 5vw;
+            padding-top: 9vh;
+        }
     }
-    .worker-daniel {
-        justify-content: start;
-    }
-}

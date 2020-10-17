@@ -1,56 +1,66 @@
-/* the challenge */
-
-.challenge {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
+#challenge {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
+    text-align: center;
     padding-top: 7vh;
     margin-bottom: 8vh;
-}
-
-.challenge__head {
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin-top: 1%;
-    font-size: 56px;
-    color: #0970A3;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-}
-
-.challenge__message {
-    width: 51vw;
-    font-size: 21px;
-    margin: 1% 0;
-    color: darkslategrey;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    letter-spacing: 0.5px;
-    font-weight: 400;
-    line-height: 28px;
-    margin-bottom: 4vh;
-}
-
-.challenge__image {
-    height: 40vh;
-    width: auto;
-    -o-object-fit: contain;
-    object-fit: contain;
+    .challenge__head {
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: 56px;
+        margin-bottom: 3vh;
+        color: #0970A3;
+        align-self: center;
+    }
+    .challenge__message {
+        width: 70vw;
+        font-size: 21px;
+        align-self: center;
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 10vh;
+    }
+    .challenge__image {
+        height: 40vh;
+        width: auto;
+        object-fit: contain;
+    }
 }
 
 .bigger {
-    -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
     height: 52vh !important;
     width: auto;
 }
 
+@media screen and (min-width: 200px) and (max-width: 900px) {
+    #challenge {
+        margin-bottom: 0;
+    }
+    .challenge__head {
+        margin-top: 3%;
+        font-size: 28px;
+    }
+    .challenge__message {
+        width: 70vw;
+        font-size: 18px;
+        margin-bottom: 3%;
+        align-self: center;
+        line-height: 20px;
+    }
+    .challenge-image {
+        height: 30vh;
+        width: auto;
+        -o-object-fit: contain;
+        object-fit: contain;
+        padding-top: 3vh;
+    }
+}
 
-/* the challange end*/
+@media screen and (min-width: 300px) and (max-width: 460px) {
+    .challenge__message {
+        margin-top: 2vh;
+        line-height: 19px;
+    }
+}

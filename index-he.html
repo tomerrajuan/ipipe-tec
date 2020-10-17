@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <title>Ipipe</title>
+    <title>ipipe - Mapping water distribution networks</title>
     <link rel="stylesheet" href="./scss-he/style-he.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/jpg" href="/favicon.jpg" />
+    <link rel="shortcut icon" type="image/jpg" href="./public/logo.jpg" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -29,23 +29,39 @@
 <body dir="rtl">
     <header>
         <img class="logo-header" src="./public/logo.jpg" alt="" />
+
         <navbar class="navbar">
             <a href="#challenge">האתגר</a>
             <a href="#about">על החברה</a>
             <a href="#solution">הפתרון</a>
+            <a href="#technology">הטכנולוגיה</a>
             <a href="#team">המומחים שלנו</a>
             <a href="#contact">צור קשר</a>
         </navbar>
+
         <!-- header for smaller screens -->
+        <ion-icon class="hamburger" name="grid-outline"></ion-icon>
+
         <div class="header-tablet">
-            <div id="header-tablet-menu">
-                <ul>
-                    <li><a href="#challenge">האתגר</a></li>
-                    <li><a href="#technology">הטכנולוגיה</a></li>
-                    <li><a href="#solution">הפתרון</a></li>
-                    <li><a href="#team">המומחים שלנו</a></li>
-                    <li><a href="#contact">צור קשר</a></li>
-                </ul>
+            <div class="header-tablet-menu">
+                <div class="header-tablet-menu-link">
+                    <a href="#challenge">האתגר</a>
+                </div>
+                <div class="header-tablet-menu-link">
+                    <a href="#about">על החברה</a>
+                </div>
+                <div class="header-tablet-menu-link">
+                    <a href="#technology">הטכנולוגיה</a>
+                </div>
+                <div class="header-tablet-menu-link">
+                    <a href="#solution">הפתרון</a>
+                </div>
+                <div class="header-tablet-menu-link">
+                    <a href="#team">המומחים שלנו</a>
+                </div>
+                <div class="header-tablet-menu-link">
+                    <a href="#contact">צור קשר</a>
+                </div>
                 <ion-icon class="close-ham-menu" name="exit-outline"></ion-icon>
             </div>
         </div>
@@ -53,17 +69,14 @@
 
     <main>
 
-        <div class="welcome_message">
-            <h1>ipipe</h1>
-            <h2 id="moving-headline"></h2>
-        </div>
-        <select id="language-menu" onchange="location = this.value;">
+
+        <select class="language-menu" onchange="location = this.value;">
             <option value="index-he.html">עברית</option>
             <option value="index.html">English</option>
         </select>
-        <img id="pipe_img" src="./public/pipe1.jpg" alt="" />
+        <img class="pipe_img" src="./public/pipe2.jpeg" alt="" />
 
-        <section class="challenge">
+        <section id="challenge">
             <h1 class="challenge__head">האתגר</h1>
             <p class="challenge__message">
                 <strong>
@@ -79,7 +92,7 @@
 
 
         <section id="solution">
-            <h1 id="solution_head">הפתרון</h1>
+            <h1 class="solution__head">הפתרון</h1>
             <p class="solution__message">
                 אנו בחברת אייפייפ פיתחנו מערכת מהפכנית שבמרכזה פלטפורמה (צוללת זעירה) אוטונומית, נושאת חיישנים המאפשרת בדיקה ישירה של צנרת המים מבפנים בזמן שהצנרת פעילה ומבלי להפריע את אספקת המים לצרכנים.
                 הפתרון שלנו מאפשר ניטור של צנרת מים מקוטר של "4 ועד לקוטר של "80 ויותר ובטווחים של עד 10 ק''מ.
@@ -96,7 +109,7 @@
             </h3>
         </section>
 
-        <section class="technology">
+        <section id="technology">
             <div class="technology__info">
                 <h1 class="technology__head">הטכנולוגיה</h1>
                 <p class="technology__message">
@@ -108,10 +121,10 @@
 
             </div>
 
-            <img class="technology__video" src="./public/data.jpg" alt="" />
+            <img class="technology__data" src="./public/data.jpg" alt="" />
         </section>
 
-        <section class="team">
+        <section id="team">
             <h1 class="team__header">המומחים שלנו</h1>
             <div class="team-row">
                 <div class="worker">
@@ -152,9 +165,9 @@
                 </div>
             </div>
         </section>
-        <section class="about">
-            <h1 class="about_head">על החברה</h1>
-            <p class="about_message">
+        <section id="about">
+            <h1 class="about__head">על החברה</h1>
+            <p class="about__message">
                 אנו <strong>(iPIPE Ltd)</strong> חברת סטארט-אפ המנהלת מערכת מהפכנית המספקת בדיקה ישירה ויכולת ניהול מערכות של רשתות צנרת מי שתייה בלחץ בזמן שהצנרת פעילה.
                 <br><br> אנו מספקים פתרונות אפקטיביים לזיהוי ואיתור נזילות, ריתוכים לקויים, קורוזיה, חסימות, חיבורים לא מורשים וקטעי רשת ללא מיפוי.
                 <br><br> במימון <strong>משרד האנרגיה</strong> השגנו קשר אסטרטגי עם חברות מים מרכזיות בישראל -
@@ -164,7 +177,7 @@
         </section>
 
         <div class="ticker">
-            <div class="ticker-headlines">
+            <div class="headlines">
                 <h5 class="news">2018 - החברה קיבלה מענק פיתוח ממשרד האנרגיה והמים </h5>
                 <h5 class="news">2019 – הסכם לביצוע פיילוט עם חברת "הגיחון'' (תאגיד המים של ירושלים)</h5>
                 <h5 class="news">2019 – הסכם לביצוע פיילוט עם ''מניב ראשון'' (תאגיד המים של ראשון לציון) </h5>
@@ -176,7 +189,7 @@
 
         <section id="contact">
             <div id="row">
-                <h1 class="contact">CONTACT US</h1>
+                <h1 class="contact">צור קשר</h1>
                 <form action="https://formspree.io/menashe@ipipe-tec.com" method="POST" id="contactForm" name="sentMessage" novalidate="novalidate">
                     <div class="col-md-6">
                         <div class="form">
@@ -213,44 +226,45 @@
 
     </main>
 
-    <footer class="footer-distributed">
-        <div class="footer-right">
-            <img id="logo_footer" src="./public/logo.jpg" alt="" />
-            <p class="footer-links">
+    <footer class="footer">
+        <div class="footer--right">
+            <img class="footer__logo" src="./public/logo.jpg" alt="" />
+            <p class="footer__links">
                 <a href="#" class="link-1">Home</a>
                 <a href="#about"> About</a>
             </p>
-            <p class="footer-company-name">
+            <p class="footer--left__copyright">
                 Copyright © 2020 IPIPE TEC <br>- כל הזכויות שמורות
             </p>
         </div>
-        <div class="footer-center">
-            <div>
+        <div class="footer--center">
+            <div class="footer--center__box">
+
                 <i class="fa fa-map-marker"></i>
                 <p><span>רח' נבון 19</span> 94352 ירושלים, ישראל </p>
             </div>
-            <div>
+            <div class="footer--center__box">
+
                 <i class="fa fa-phone"></i>
                 <p>00972-50-910-2244</p>
             </div>
-            <div>
+            <div class="footer--center__box">
+
                 <i class="fa fa-envelope"></i>
                 <p>
                     <a href="mailto:menashe@ipipe-tec.com">menashe@ipipe-tec.com</a>
                 </p>
             </div>
         </div>
-        <div class="footer-left">
+        <div class="footer--left">
             <p class="footer-company-about">
                 חפשו אותי ב- Linkedin..
             </p>
 
-            <div class="footer-icons">
-                <a href="https://www.linkedin.com/in/tomer-rajuan-3406b0192/" target="_blank"><i class="fa fa-linkedin"></i
+            <a href="https://www.linkedin.com/in/tomer-rajuan-3406b0192/" target="_blank"><i class="fa fa-linkedin"></i
           ></a>
-                <h3 id="my_contact">האתר נבנה ועוצב על ידי</h3>
-                <a id="tomer_rajuan" href="https://www.linkedin.com/in/tomer-rajuan-3406b0192/" target="_blank">Tomer Rajuan</a>
-            </div>
+            <p id="my_contact">האתר נבנה ועוצב על ידי</p>
+            <a id="tomer_rajuan" href="https://www.linkedin.com/in/tomer-rajuan-3406b0192/" target="_blank">Tomer Rajuan</a>
         </div>
     </footer>
 

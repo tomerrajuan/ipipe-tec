@@ -103,6 +103,16 @@
   margin: 1px;
 }
 
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer--left,
+footer .footer--center {
+    border-bottom: 1px solid white;
+  }
+}
 /* header and menu */
 .on {
   transition-duration: 1s;
@@ -215,71 +225,40 @@ header {
 }
 
 /* end navbar */
-/* welcome section */
-#pipe_img {
-  object-fit: cover;
-  width: 100vw;
-  height: 85vh;
-  margin-top: 65px;
-}
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  .navbar {
+    visibility: hidden;
+  }
 
-.welcome {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 20vh;
-  left: 3%;
-  padding: 1%;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 6px;
+  .hamburger {
+    display: inline;
+    margin-right: 1vw;
+    float: right;
+    font-size: 30px;
+    align-self: center;
+  }
 }
-
-.welcome_message {
-  position: absolute;
-  width: 600px;
-  height: 200px;
-  z-index: 2;
-  margin-top: 61vh;
-  margin-left: 4vw;
-  text-shadow: 1px 1px 2px #000;
-  letter-spacing: 1px;
-  overflow: hidden;
-  color: white;
+@media screen and (min-width: 300px) and (max-width: 570px) {
+  .navbar a {
+    font-size: 12px;
+  }
 }
-.welcome_message h1 {
-  font-size: 75px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.welcome_message h2 {
-  font-size: 22px;
-  margin-left: 10vw;
-  font-weight: 700;
-  text-align: center;
-}
-
-#welcome {
-  color: white;
-  font-size: 35px;
-  font-weight: 600;
-}
-
-/* end welcome section */
-.challenge {
+#challenge {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding-top: 7vh;
   margin-bottom: 8vh;
 }
-.challenge .challenge__head {
+#challenge .challenge__head {
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 56px;
+  margin-bottom: 3vh;
   color: #0970A3;
   align-self: center;
 }
-.challenge .challenge__message {
+#challenge .challenge__message {
   width: 70vw;
   font-size: 21px;
   align-self: center;
@@ -288,7 +267,7 @@ header {
   line-height: 28px;
   margin-bottom: 10vh;
 }
-.challenge .challenge__image {
+#challenge .challenge__image {
   height: 40vh;
   width: auto;
   object-fit: contain;
@@ -300,13 +279,47 @@ header {
   width: auto;
 }
 
-.team {
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  #challenge {
+    margin-bottom: 0;
+  }
+
+  .challenge__head {
+    margin-top: 3%;
+    font-size: 28px;
+  }
+
+  .challenge__message {
+    width: 70vw;
+    font-size: 18px;
+    margin-bottom: 3%;
+    align-self: center;
+    line-height: 20px;
+  }
+
+  .challenge-image {
+    height: 30vh;
+    width: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    padding-top: 3vh;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 460px) {
+  .challenge__message {
+    margin-top: 2vh;
+    line-height: 19px;
+  }
+}
+#team {
   width: 80vw;
   margin-left: 10vw;
   padding-top: 5%;
   margin-bottom: 12vh;
+  display: flex;
+  flex-direction: column;
 }
-.team .team__header {
+#team .team__header {
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 48px;
@@ -314,23 +327,23 @@ header {
   text-align: center;
   margin-bottom: 8vh;
 }
-.team .team-row {
+#team .team-row {
   display: flex;
   flex-direction: row;
-  margin-left: 10vw;
+  justify-content: center;
 }
-.team .worker {
+#team .worker {
   display: flex;
   flex-direction: column;
-  width: 30vw;
-  height: 500px;
+  width: 35vw;
+  height: auto;
   margin-bottom: 2vh;
   margin-right: 2vw;
   padding: 15px 5px;
   justify-content: space-between;
   border: 1px solid;
 }
-.team .worker a {
+#team .worker a {
   width: 35px;
   height: 35px;
   cursor: pointer;
@@ -344,16 +357,11 @@ header {
   align-self: center;
   justify-self: flex-end;
 }
-.team .worker .worker:hover {
-  -webkit-box-shadow: 0 4px 8px;
+#team .worker:hover {
   box-shadow: 0 4px 8px;
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
-.team .worker .worker a:hover {
-  border: 1px solid;
-}
-.team .worker__image {
+#team .worker__image {
   height: 200px;
   width: 200px;
   margin-bottom: 20px;
@@ -361,7 +369,7 @@ header {
   object-fit: cover;
   align-self: center;
 }
-.team .worker__message {
+#team .worker__message {
   color: darkslategrey;
   font-size: 16px;
   width: 100%;
@@ -371,277 +379,11 @@ header {
   letter-spacing: 0.5px;
   margin-bottom: 1vh;
 }
-.team .worker-daniel {
+#team .worker-daniel {
   justify-content: start;
 }
 
-.modal-container-news {
-  position: fixed;
-  z-index: 50;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  visibility: hidden;
-}
-
-.modal-container-news.on {
-  visibility: visible !important;
-}
-
-.modal-container-content {
-  overflow: scroll;
-  width: 80vw;
-  height: 90vh;
-  background: white;
-  -ms-flex-item-align: center;
-  align-self: center;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.modal-container-content button {
-  -ms-flex-item-align: end;
-  width: 25px;
-  font-size: 15px;
-  border-radius: 5px;
-  position: absolute;
-  z-index: 200;
-  border: 1px solid #24292e;
-  cursor: pointer;
-  -webkit-box-shadow: 1px 1px 1px;
-  box-shadow: 1px 1px 1px;
-  outline: none;
-  right: 11vw;
-}
-
-.modal-container-content button:active {
-  margin-top: 1px;
-  margin-left: 2px;
-}
-
-.modal-container-content section {
-  margin-top: 25px;
-}
-
-#news {
-  width: 90%;
-  height: 300px;
-  border: 2px solid;
-  margin: 1% 5%;
-  padding: 10px;
-}
-
-.news-heading {
-  padding: 9px;
-  width: 80%;
-  height: 40px;
-  line-height: 20px;
-  border: 2px solid red;
-  margin-left: 10px;
-}
-
-.news-div-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  width: 95%;
-  height: 85%;
-  padding: 15px 10px;
-}
-
-.news-div-content-word {
-  width: 70%;
-  height: 200px;
-  padding: 8px;
-  border: 2px solid blue;
-  overflow: scroll;
-}
-
-.news img {
-  width: 200px;
-  height: 200px;
-  margin-left: 20px;
-  border: 2px solid grey;
-}
-
 @media screen and (min-width: 200px) and (max-width: 900px) {
-  .welcome {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 20vh;
-    left: 3%;
-    padding: 1%;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 6px;
-  }
-
-  .welcome_message {
-    width: 440px;
-    margin-top: 50vh;
-  }
-  .welcome_message h1 {
-    font-size: 45px;
-  }
-  .welcome_message h2 {
-    margin-left: 5vw;
-    font-size: 17px;
-  }
-
-  .hamburger {
-    display: inline;
-    margin-right: 1vw;
-    float: right;
-    font-size: 30px;
-    align-self: center;
-  }
-
-  .navbar {
-    visibility: hidden;
-  }
-
-  #pipe_img {
-    width: 100vw;
-    margin-top: 4%;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-
-  .challenge {
-    margin-bottom: 0;
-  }
-
-  .challenge__head {
-    margin-top: 3%;
-    font-size: 28px;
-  }
-
-  .challenge__message {
-    width: 70vw;
-    font-size: 18px;
-    margin-bottom: 3%;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    line-height: 20px;
-  }
-
-  .challenge-image {
-    height: 30vh;
-    width: auto;
-    -o-object-fit: contain;
-    object-fit: contain;
-    padding-top: 3vh;
-  }
-
-  .solution {
-    color: #0970A3;
-    padding-top: 3vh;
-    margin-bottom: 0vh;
-  }
-
-  .solution__head {
-    font-size: 24px;
-  }
-
-  .solution__message {
-    width: 85vw !important;
-    font-size: 18px;
-    line-height: 20px;
-    margin-bottom: 7vh;
-  }
-
-  .solution__video {
-    height: 41vh;
-    width: 100vw !important;
-    margin-left: 0 !important;
-  }
-
-  .technology {
-    margin-top: 6vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-item-align: center;
-    align-self: center;
-    padding-top: 7vh;
-    height: auto;
-    padding-bottom: 3vh;
-    background-color: white;
-  }
-
-  .technology_info {
-    width: 90vw;
-  }
-
-  .technology__head {
-    margin-top: 1vh;
-    font-size: 30px;
-    margin-bottom: 3%;
-    color: #0970A3;
-    width: 80vw;
-  }
-
-  .technology__message {
-    margin-bottom: 1.5%;
-    font-size: 15px;
-    width: 90vw;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    margin-left: 0;
-    line-height: 17px;
-    width: 80vw;
-    margin-bottom: 5vh;
-  }
-
-  .technology__video {
-    width: 81vw;
-    height: auto;
-  }
-
-  .about {
-    height: auto !important;
-    padding: 50px 0;
-  }
-
-  .about__message {
-    width: 90vw;
-    font-size: 18px;
-  }
-
-  .about__head {
-    font-size: 30px;
-  }
-
-  .news {
-    font-size: 13px;
-  }
-
   .team__header {
     font-size: 24px;
     margin-bottom: 6vh;
@@ -658,10 +400,9 @@ header {
     width: 70vw !important;
   }
 
-  .worker__img {
-    height: 140px;
-    width: 140px;
-    border-radius: 85px;
+  .worker__image {
+    height: 140px !important;
+    width: 140px !important;
   }
 
   .worker__message {
@@ -669,132 +410,8 @@ header {
     width: 65vw;
     margin-top: 3vh;
   }
-
-  .modal-container-content button {
-    right: 12vw;
-  }
-
-  .modal-container-content section {
-    margin-top: 30px;
-  }
-
-  .news {
-    margin: 1% 1%;
-    height: auto;
-    width: 98%;
-  }
-
-  .news-heading {
-    font-size: 14px;
-    padding: 9px;
-    width: 90%;
-    height: 40px;
-    line-height: 20px;
-    border: 2px solid red;
-  }
-
-  .news-div-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-  }
-
-  .news-div-content-word {
-    width: 100%;
-    height: 200px;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    margin-top: 10px;
-    padding: 8px;
-    border: 2px solid blue;
-    overflow: scroll;
-  }
-
-  .news img {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    width: 190px;
-    height: 190px;
-    margin-left: 4%;
-    border: 2px solid grey;
-  }
-
-  /* contact section */
-  #row {
-    padding-top: 5vh;
-  }
-
-  #contact {
-    padding: 43px;
-    width: 90vw;
-    margin-left: 5vw;
-    margin-top: 0;
-    margin-bottom: 4vh;
-  }
-
-  .form {
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  textarea {
-    width: 90%;
-  }
-
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .footer--left,
-footer .footer--center {
-    border-bottom: 1px solid white;
-  }
-}
-@media screen and (min-width: 570px) and (max-width: 670px) {
-  .modal-container-news.on {
-    visibility: hidden !important;
-  }
-}
-@media screen and (min-width: 380px) and (max-width: 570px) {
-  .welcome_message {
-    display: none;
-  }
-
-  .team-row {
-    margin-left: 10vw;
-  }
-}
-@media screen and (min-width: 300px) and (max-width: 420px) {
-  .team-row {
-    margin-left: 10vw;
-  }
-}
-@media screen and (min-width: 200px) and (max-width: 300px) {
-  .team-row {
-    margin-left: 10vw;
-  }
 }
 @media screen and (min-width: 300px) and (max-width: 460px) {
-  F .navbar a {
-    font-size: 9px;
-  }
-
-  .challenge__message {
-    margin-top: 2vh;
-    line-height: 19px;
-  }
-
-  #contact {
-    padding: 30px 1px;
-    margin-top: 2vh;
-    margin-bottom: 5vh;
-    width: 90vw;
-    margin-left: 7vw;
-  }
-
   .worker__message {
     font-size: 14px;
     line-height: 14px;
@@ -806,44 +423,45 @@ footer .footer--center {
     height: auto;
   }
 
-  .team {
+  #team {
     width: 90vw;
     margin-left: 5vw;
     padding-top: 9vh;
   }
-
-  .solution__message {
-    margin-bottom: 5vh;
-  }
-
-  #pipe_explosion {
-    height: 35vh;
-    width: 100vw;
-  }
-
-  .about__message {
-    line-height: 19px;
-  }
-
-  .team-row {
-    margin-left: 10vw;
-  }
 }
-/*# sourceMappingURL=style.css.map */
-/* contact section */
-#contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.headlines {
+  white-space: nowrap;
+  position: absolute;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+  left: 0%;
+  padding-top: 7px;
+}
+
+.headlines h5 {
+  padding-right: 40px;
+  font-size: 16px;
+}
+
+.ticker {
+  position: relative;
+  overflow: hidden;
+  height: 3em;
+  border-bottom: 1px solid black;
+  padding-top: 5px;
+}
+
+.news {
+  font-size: 13px;
+}
+
+#contact {
+  display: flex;
   flex-direction: column;
   text-align: center;
   padding-top: 5%;
-  width: 70vw;
+  width: 90vw;
   border-radius: 5px;
-  margin-left: 15vw;
+  margin-left: 5vw;
   margin-top: 5vh;
   padding-top: 10vh;
 }
@@ -984,7 +602,38 @@ button:active {
 }
 
 /* end contact section */
-.solution {
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  /* contact section */
+  #row {
+    padding-top: 5vh;
+  }
+
+  #contact {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 0;
+    margin-bottom: 4vh;
+  }
+
+  .form {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  textarea {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 460px) {
+  #contact {
+    padding: 30px 1px;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    width: 90vw;
+    margin-left: 7vw;
+  }
+}
+#solution {
   display: flex;
   flex-direction: column;
   font-size: 21px;
@@ -992,15 +641,15 @@ button:active {
   padding-top: 7vh;
   margin-bottom: 15vh;
 }
-.solution .solution__head {
+#solution .solution__head {
   letter-spacing: 1px;
   font-weight: 400;
-  margin-top: 1%;
   font-size: 56px;
+  margin-bottom: 3vh;
   color: #0970A3;
   align-self: center;
 }
-.solution .solution__message {
+#solution .solution__message {
   color: black;
   width: 70vw;
   font-size: 21px;
@@ -1010,106 +659,46 @@ button:active {
   line-height: 28px;
   margin-bottom: 4vh;
 }
-.solution .solution__video {
+#solution .solution__video {
   height: 450px;
   width: 60vw;
   border-radius: 5px;
   margin-left: 20vw;
 }
-.solution h3 {
+#solution h3 {
   font-size: 16px;
 }
 
-.technology {
-  display: flex;
-  margin-top: 5%;
-  width: 90vw;
-  justify-content: space-around;
-  align-items: center;
-  padding: 30px;
-  margin-left: 5vw;
-  background: #F4FAFD;
-}
-.technology .technology__info {
-  font-size: 21px;
-}
-.technology .technology__head {
-  letter-spacing: 1px;
-  font-weight: 400;
-  color: #0970A3;
-  font-size: 46px;
-}
-.technology .technology__message {
-  font-size: 21px;
-  letter-spacing: 1px;
-  font-weight: 400;
-  line-height: 25px;
-}
-.technology .technology__data {
-  transform: rotatex(20deg);
-  height: 48vh;
-  width: auto;
-  object-fit: contain;
-  padding: 13px 0;
-  background: #333333;
-}
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  #solution {
+    color: #0970A3;
+    padding-top: 3vh;
+    margin-bottom: 0vh;
+  }
 
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  font-family: "DIN";
-}
+  .solution__head {
+    font-size: 24px;
+  }
 
-@font-face {
-  font-family: "DIN";
-  src: url("../public/DINWeb.woff") format("woff");
-}
-.headlines {
-  white-space: nowrap;
-  position: absolute;
-  display: flex;
-  left: 0%;
-  padding-top: 7px;
-}
+  .solution__message {
+    width: 85vw !important;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 7vh;
+  }
 
-.headlines h5 {
-  padding-right: 40px;
-  font-size: 16px;
+  .solution__video {
+    height: 41vh;
+    width: 100vw !important;
+    margin-left: 0 !important;
+  }
 }
-
-.ticker {
-  position: relative;
-  overflow: hidden;
-  height: 3em;
-  border-bottom: 1px solid black;
-  padding-top: 5px;
+@media screen and (min-width: 300px) and (max-width: 460px) {
+  .solution__message {
+    margin-bottom: 5vh;
+  }
 }
-
-#language-menu {
-  position: absolute;
-  margin-top: 90px;
-  right: 20px;
-  z-index: 1;
-  outline: none;
-  opacity: 0.6;
-}
-
-/* added classes */
-.tech {
-  border: 3px solid white;
-  transition-duration: 1s;
-}
-
-.active {
-  transition-duration: 0.5;
-  opacity: 1;
-  transform: translateY("50");
-}
-
-/* end of added classes  */
-/* about */
-.about {
+#about {
   height: auto;
   width: 90vw;
   margin-left: 5vw;
@@ -1136,7 +725,237 @@ button:active {
   text-align: center;
   letter-spacing: 1px;
   font-weight: 400;
-  line-height: 23px;
 }
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  #about {
+    height: auto !important;
+    padding: 30px 0;
+  }
+
+  .about__message {
+    width: 90vw;
+    font-size: 18px;
+  }
+
+  .about__head {
+    font-size: 30px;
+    padding-top: 0;
+  }
+}
+/* header and menu */
+.pipe_img {
+  object-fit: cover;
+  width: 100vw;
+  height: 95vh;
+  opacity: 0.95;
+}
+
+.language-menu {
+  position: absolute;
+  left: 40px;
+  margin-top: 90px;
+  z-index: 1;
+  outline: none;
+  opacity: 0.6;
+}
+
+.welcome {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 20vh;
+  left: 3%;
+  padding: 1%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+.welcome_message {
+  position: absolute;
+  width: 700px;
+  height: 200px;
+  z-index: 2;
+  margin-top: 58vh;
+  margin-left: 4vw;
+  text-shadow: 1px 1px 2px #000;
+  letter-spacing: 1px;
+  font-family: sans-serif !important;
+  overflow: hidden;
+  color: white;
+}
+.welcome_message h1 {
+  font-size: 75px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+.welcome_message h2 {
+  font-size: 22px;
+  margin-left: 10vw;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  .welcome {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20vh;
+    left: 3%;
+    padding: 1%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+  }
+
+  .welcome_message {
+    width: 440px;
+    margin-top: 50vh;
+  }
+  .welcome_message h1 {
+    font-size: 45px;
+  }
+  .welcome_message h2 {
+    margin-left: 5vw;
+    font-size: 17px;
+  }
+
+  .pipe_img {
+    width: 100vw;
+    margin-top: 4%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 820px) {
+  .welcome_message {
+    display: none;
+  }
+
+  .pipe_img {
+    height: 400px;
+  }
+}
+#technology {
+  display: flex;
+  margin-top: 5%;
+  width: 90vw;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  padding-top: 7vh;
+  margin-left: 5vw;
+  background: #F4FAFD;
+}
+#technology .technology__info {
+  font-size: 21px;
+}
+#technology .technology__head {
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #0970A3;
+  font-size: 46px;
+}
+#technology .technology__message {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25px;
+  width: 50vw;
+}
+#technology .technology__data {
+  transform: rotatex(20deg);
+  height: 48vh;
+  width: auto;
+  object-fit: contain;
+  padding: 13px 0;
+  background: #333333;
+}
+
+@media screen and (min-width: 200px) and (max-width: 1200px) {
+  #technology {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: auto;
+    padding-bottom: 3vh;
+    background-color: white;
+  }
+  #technology .technology__message {
+    margin-bottom: 5vh;
+    width: 80vw;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  #technology {
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-top: 7vh;
+    height: auto;
+    padding-bottom: 3vh;
+    background-color: white;
+  }
+
+  .technology_info {
+    width: 90vw;
+  }
+
+  .technology__head {
+    margin-top: 1vh;
+    font-size: 30px;
+    margin-bottom: 3%;
+    color: #0970A3;
+    width: 80vw;
+  }
+
+  .technology__message {
+    margin-bottom: 1.5%;
+    font-size: 15px;
+    width: 90vw;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-left: 0;
+    line-height: 17px;
+    width: 80vw;
+    margin-bottom: 5vh;
+  }
+
+  .technology__data {
+    height: 65vh;
+    width: auto;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 420px) {
+  .technology__data {
+    height: 35vh !important;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "DIN";
+}
+
+@font-face {
+  font-family: "DIN";
+  src: url("../public/DINWeb.woff") format("woff");
+}
+/* added classes */
+.tech {
+  border: 3px solid white;
+  transition-duration: 1s;
+}
+
+.active {
+  transition-duration: 0.5;
+  opacity: 1;
+  transform: translateY("50");
+}
+
+/* end of added classes  */
 
 /*# sourceMappingURL=style.css.map */

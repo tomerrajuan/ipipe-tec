@@ -44,7 +44,7 @@
 
     function typeWriter() {
         if (i < txt.length) {
-            document.getElementById("moving-headline").innerHTML += txt.charAt(i);
+            document.querySelector(".moving-headline").innerHTML += txt.charAt(i);
             i++;
             setTimeout(typeWriter, speed);
         }
