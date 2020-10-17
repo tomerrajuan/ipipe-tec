@@ -8,17 +8,12 @@
         padding-top: 7vh;
         margin-left: 5vw;
         background: #F4FAFD;
-        .technology__info {
-            font-size: 21px;
-        }
         .technology__head {
             letter-spacing: 1px;
             font-weight: 400;
             color: #0970A3;
-            font-size: 46px;
         }
         .technology__message {
-            font-size: 21px;
             font-weight: 400;
             line-height: 25px;
             width: 50vw;
@@ -64,17 +59,13 @@
         }
         .technology__head {
             margin-top: 1vh;
-            font-size: 30px;
             margin-bottom: 3%;
             color: #0970A3;
             width: 80vw;
         }
         .technology__message {
             margin-bottom: 1.5%;
-            font-size: 15px;
             width: 90vw;
-            -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
             align-self: center;
             margin-left: 0;
             line-height: 17px;
@@ -87,7 +78,7 @@
         }
     }
     
-    @media screen and (min-width: 200px) and (max-width: 420px) {
+    @media screen and (min-width: 200px) and (max-width: 550px) {
         .technology__data {
             height: 35vh !important;
         }

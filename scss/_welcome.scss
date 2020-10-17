@@ -9,7 +9,7 @@
 
 .language-menu {
     position: absolute;
-    left: 40px;
+    left: 10px;
     margin-top: 90px;
     z-index: 1;
     outline: none;
@@ -40,12 +40,11 @@
     overflow: hidden;
     color: white;
     h1 {
-        font-size: 75px;
         font-weight: 700;
         letter-spacing: 4px;
+        font-size: 70px;
     }
     h2 {
-        font-size: 22px;
         margin-left: 10vw;
         font-weight: 700;
         text-align: center;
@@ -63,17 +62,6 @@
         padding: 1%;
         background: rgba(0, 0, 0, 0.3);
         border-radius: 6px;
-    }
-    .welcome_message {
-        width: 440px;
-        margin-top: 50vh;
-        h1 {
-            font-size: 45px;
-        }
-        h2 {
-            margin-left: 5vw;
-            font-size: 17px;
-        }
     }
     .pipe_img {
         width: 100vw;

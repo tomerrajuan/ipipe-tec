@@ -2,16 +2,16 @@
     white-space: nowrap;
     position: absolute;
     display: flex;
-    right: 0%;
+    right: 0;
     padding-top: 7px;
 }
 
 .headlines h5 {
     padding-right: 40px;
-    font-size: 16px;
 }
 
 .ticker {
+    background-color: #0970A3;
     position: relative;
     overflow: hidden;
     height: 3em;
@@ -20,5 +20,6 @@
 }
 
 .news {
-    font-size: 13px;
+    color: white;
+    margin-left: 13px;
 }

@@ -8,7 +8,7 @@
     // typing welcome message
 
     var headlines = $(".headlines");
-    var links = $("h5");
+    var links = $("h3");
     var left = headlines.offset().left;
     var anim;
     // links.ep(0).outerWidth();
@@ -18,7 +18,7 @@
         if (left <= -links.eq(0).outerWidth()) {
             left += links.eq(0).outerWidth();
             headlines.append(links.eq(0));
-            links = headlines.find("h5");
+            links = headlines.find("h3");
         }
         headlines.css("left", left);
         anim = requestAnimationFrame(movingHeads);

@@ -33,7 +33,6 @@
   color: inherit;
 }
 .footer--left .footer--left__copyright {
-  font-size: 14px;
   text-align: center;
   font-weight: normal;
   margin: 0;
@@ -47,7 +46,6 @@
 .footer--center i {
   background-color: #33383b;
   color: #ffffff;
-  font-size: 25px;
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -55,9 +53,6 @@
   line-height: 42px;
   margin: 10px 15px;
   vertical-align: middle;
-}
-.footer--center i.fa-envelope {
-  font-size: 17px;
 }
 .footer--center .footer--center__box {
   display: flex;
@@ -68,7 +63,6 @@
 .footer--center .footer--center__box span {
   display: block;
   font-weight: normal;
-  font-size: 14px;
   line-height: 2;
 }
 .footer--center .footer--center__box a {
@@ -85,7 +79,6 @@
 .footer--right i {
   background-color: #33383b;
   color: #ffffff;
-  font-size: 25px;
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -95,8 +88,7 @@
   vertical-align: middle;
 }
 .footer--right a,
-.footer--right p {
-  font-size: 14px;
+.footer--right h3 {
   color: #ffffff;
   text-align: center;
   font-weight: normal;
@@ -152,8 +144,8 @@ header {
 }
 
 .hamburger {
+  font-size: 30px;
   display: none;
-  font-size: 15px;
   right: 4vw;
   position: fixed;
   cursor: pointer;
@@ -163,45 +155,50 @@ header {
 .header-tablet {
   position: fixed;
   top: 0;
-  right: -168px;
-  width: 168px;
-  height: 300px;
+  right: -180px;
+  width: 180px;
+  height: 400px;
   overflow: hidden;
 }
 
 .header-tablet-menu {
   position: absolute;
   width: auto;
+  height: auto;
   z-index: 1000;
   background: white;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
   letter-spacing: 1px;
-  padding-top: 50px;
 }
 .header-tablet-menu .header-tablet-menu-link {
   padding: 0 10px;
-  width: 168px;
+  width: 180px;
   height: 30px;
   list-style: none;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 .header-tablet-menu .header-tablet-menu-link:hover {
   background-color: aliceblue;
 }
 .header-tablet-menu a {
   text-decoration: none;
-  font-size: 14px;
   color: #0970A3;
   font-weight: 700;
   font: icon;
 }
+.header-tablet-menu .header-tablet-menu__close {
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  margin-bottom: 2vh;
+  border: 2px solid white;
+  background-color: #0970A3;
+  font-size: 20px;
+}
 .header-tablet-menu .close-ham-menu {
-  color: #0970A3;
-  font-size: 26px;
-  position: absolute;
-  right: 3vw;
-  top: 2vh;
+  padding: 10px;
+  color: white;
   cursor: pointer;
 }
 
@@ -218,7 +215,6 @@ header {
   padding: 0 7px;
   text-decoration: none;
   margin: 0 15px;
-  font-size: 16px;
   width: auto;
   align-self: center;
   letter-spacing: 0.5px;
@@ -234,13 +230,7 @@ header {
     display: inline;
     margin-right: 1vw;
     float: right;
-    font-size: 30px;
     align-self: center;
-  }
-}
-@media screen and (min-width: 300px) and (max-width: 570px) {
-  .navbar a {
-    font-size: 12px;
   }
 }
 #challenge {
@@ -253,14 +243,12 @@ header {
 #challenge .challenge__head {
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 56px;
   margin-bottom: 3vh;
   color: #0970A3;
   align-self: center;
 }
 #challenge .challenge__message {
   width: 70vw;
-  font-size: 21px;
   align-self: center;
   letter-spacing: 0.5px;
   font-weight: 400;
@@ -285,14 +273,12 @@ header {
   }
 
   .challenge__head {
-    margin-top: 3%;
-    font-size: 28px;
+    margin-top: 3vh;
   }
 
   .challenge__message {
     width: 70vw;
-    font-size: 18px;
-    margin-bottom: 3%;
+    margin-bottom: 3vh;
     align-self: center;
     line-height: 20px;
   }
@@ -322,7 +308,6 @@ header {
 #team .team__header {
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 48px;
   color: #0970A3;
   text-align: center;
   margin-bottom: 8vh;
@@ -349,7 +334,6 @@ header {
   cursor: pointer;
   background-color: #33383b;
   border-radius: 2px;
-  font-size: 20px;
   color: #ffffff;
   text-align: center;
   line-height: 35px;
@@ -370,12 +354,9 @@ header {
   align-self: center;
 }
 #team .worker__message {
-  color: darkslategrey;
-  font-size: 16px;
   width: 100%;
   text-align: center;
   padding: 0 5%;
-  line-height: 20px;
   letter-spacing: 0.5px;
   margin-bottom: 1vh;
 }
@@ -385,7 +366,6 @@ header {
 
 @media screen and (min-width: 200px) and (max-width: 900px) {
   .team__header {
-    font-size: 24px;
     margin-bottom: 6vh;
   }
 
@@ -393,6 +373,7 @@ header {
     display: flex;
     flex-direction: column !important;
     margin-left: 5vw;
+    align-items: center;
   }
 
   .worker {
@@ -406,17 +387,18 @@ header {
   }
 
   .worker__message {
-    font-size: 14px;
     width: 65vw;
     margin-top: 3vh;
   }
 }
 @media screen and (min-width: 300px) and (max-width: 460px) {
   .worker__message {
-    font-size: 14px;
-    line-height: 14px;
     width: 65vw;
     margin-top: 3vh;
+  }
+
+  .team-row {
+    align-items: center;
   }
 
   .worker {
@@ -439,10 +421,10 @@ header {
 
 .headlines h5 {
   padding-right: 40px;
-  font-size: 16px;
 }
 
 .ticker {
+  background-color: #0970A3;
   position: relative;
   overflow: hidden;
   height: 3em;
@@ -451,7 +433,8 @@ header {
 }
 
 .news {
-  font-size: 13px;
+  margin-right: 13px;
+  color: white;
 }
 
 #contact {
@@ -475,7 +458,6 @@ header {
   font-family: sans-serif;
   text-align: center;
   color: #0970A3;
-  font-size: 40px;
   font-weight: 400;
   margin-bottom: 31px;
   line-height: 42px;
@@ -485,7 +467,6 @@ header {
 .form {
   height: 50px;
   position: relative;
-  font-size: 14px;
   width: 70%;
   margin-top: 6px;
   margin-left: 15%;
@@ -500,11 +481,9 @@ header {
   padding-top: 20px;
   border: none;
   outline: none;
-  font-size: 16px;
 }
 
 textarea {
-  font-size: 14px;
   min-height: 130px;
   max-height: 400px;
   border: 2px solid grey;
@@ -578,7 +557,6 @@ textarea {
   padding: 8px 16px;
   border-radius: 2px;
   font-weight: bold;
-  font-size: 11pt;
   margin-top: 5px;
   outline: none;
   cursor: pointer;
@@ -636,7 +614,6 @@ button:active {
 #solution {
   display: flex;
   flex-direction: column;
-  font-size: 21px;
   text-align: center;
   padding-top: 7vh;
   margin-bottom: 15vh;
@@ -644,7 +621,6 @@ button:active {
 #solution .solution__head {
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 56px;
   margin-bottom: 3vh;
   color: #0970A3;
   align-self: center;
@@ -652,7 +628,6 @@ button:active {
 #solution .solution__message {
   color: black;
   width: 70vw;
-  font-size: 21px;
   align-self: center;
   letter-spacing: 0.5px;
   font-weight: 400;
@@ -665,9 +640,6 @@ button:active {
   border-radius: 5px;
   margin-left: 20vw;
 }
-#solution h3 {
-  font-size: 16px;
-}
 
 @media screen and (min-width: 200px) and (max-width: 900px) {
   #solution {
@@ -676,13 +648,8 @@ button:active {
     margin-bottom: 0vh;
   }
 
-  .solution__head {
-    font-size: 24px;
-  }
-
   .solution__message {
     width: 85vw !important;
-    font-size: 18px;
     line-height: 20px;
     margin-bottom: 7vh;
   }
@@ -715,13 +682,11 @@ button:active {
   font-weight: 400;
   color: #0970A3;
   margin-bottom: 3vh;
-  font-size: 56px;
   text-align: center;
 }
 
 .about__message {
   padding: 0 5vw;
-  font-size: 18px;
   text-align: center;
   letter-spacing: 1px;
   font-weight: 400;
@@ -735,11 +700,10 @@ button:active {
 
   .about__message {
     width: 90vw;
-    font-size: 18px;
   }
 
   .about__head {
-    font-size: 30px;
+    font-size: 1.9rem;
     padding-top: 0;
   }
 }
@@ -753,7 +717,7 @@ button:active {
 
 .language-menu {
   position: absolute;
-  left: 40px;
+  left: 10px;
   margin-top: 90px;
   z-index: 1;
   outline: none;
@@ -785,12 +749,11 @@ button:active {
   color: white;
 }
 .welcome_message h1 {
-  font-size: 75px;
   font-weight: 700;
   letter-spacing: 4px;
+  font-size: 70px;
 }
 .welcome_message h2 {
-  font-size: 22px;
   margin-left: 10vw;
   font-weight: 700;
   text-align: center;
@@ -807,18 +770,6 @@ button:active {
     padding: 1%;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 6px;
-  }
-
-  .welcome_message {
-    width: 440px;
-    margin-top: 50vh;
-  }
-  .welcome_message h1 {
-    font-size: 45px;
-  }
-  .welcome_message h2 {
-    margin-left: 5vw;
-    font-size: 17px;
   }
 
   .pipe_img {
@@ -848,17 +799,12 @@ button:active {
   margin-left: 5vw;
   background: #F4FAFD;
 }
-#technology .technology__info {
-  font-size: 21px;
-}
 #technology .technology__head {
   letter-spacing: 1px;
   font-weight: 400;
   color: #0970A3;
-  font-size: 46px;
 }
 #technology .technology__message {
-  font-size: 21px;
   font-weight: 400;
   line-height: 25px;
   width: 50vw;
@@ -904,7 +850,6 @@ button:active {
 
   .technology__head {
     margin-top: 1vh;
-    font-size: 30px;
     margin-bottom: 3%;
     color: #0970A3;
     width: 80vw;
@@ -912,10 +857,7 @@ button:active {
 
   .technology__message {
     margin-bottom: 1.5%;
-    font-size: 15px;
     width: 90vw;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
     align-self: center;
     margin-left: 0;
     line-height: 17px;
@@ -928,7 +870,7 @@ button:active {
     width: auto;
   }
 }
-@media screen and (min-width: 200px) and (max-width: 420px) {
+@media screen and (min-width: 200px) and (max-width: 550px) {
   .technology__data {
     height: 35vh !important;
   }
@@ -957,5 +899,38 @@ button:active {
 }
 
 /* end of added classes  */
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+}
+
+h4 {
+  font-size: 0.7rem;
+}
+
+a {
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

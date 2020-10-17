@@ -8,10 +8,10 @@
     
     .headlines h5 {
         padding-right: 40px;
-        font-size: 16px;
     }
     
     .ticker {
+        background-color: #0970A3;
         position: relative;
         overflow: hidden;
         height: 3em;
@@ -20,5 +20,6 @@
     }
     
     .news {
-        font-size: 13px;
+        margin-right: 13px;
+        color: white;
     }
